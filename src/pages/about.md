@@ -1,37 +1,50 @@
 ---
 layout: ../layouts/AboutLayout.astro
-title: "About"
+title: "About kheAI"
 ---
 
-AstroPaper is a minimal, accessible and SEO-friendly blog theme built with [Astro](https://astro.build/) and [Tailwind CSS](https://tailwindcss.com/).
+> “I’m not rejecting the world — I just refuse to let it decide how I live.”
 
-![Astro Paper](public/astropaper-og.jpg)
+**kheAI** stands for _Kindle Harnessing Emptiness, Awaken Intelligence_.
 
-AstroPaper provides a solid foundation for blogs, or even portfolios\_ with full markdown support, built-in dark mode, and a clean layout that works out-of-the-box.
+It’s not a brand — but a path.  
+Not a product — but a pointer.
 
-The blog posts in this theme also serve as guides, docs or example articles\_ making AstroPaper a flexible starting point for your next content-driven site.
+**kheAI** is for those who:
+- live lightly in a heavy world  
+- think clearly in an age of noise  
+- move freely without fleeing
 
-## Features
+This site is a digital hermitage —  
+a place for sovereign thought, clear practice, and quiet presence.
 
-AstroPaper comes with a set of useful features that make content publishing easy and effective:
+## 🌱 What is kheAI?
 
-- SEO-friendly
-- Fast performance
-- Light & dark mode
-- Highly customizable
-- Organizable blog posts
-- Responsive & accessible
-- Static search with [PageFind](https://pagefind.app/)
-- Automatic social image generation
+kheAI is the **Minimal Path to Freedom**:
+- **Body**: Stillness through motion  
+- **Mind**: Disidentify from thought  
+- **Finance**: Antifragile sovereignty  
 
-and so much more.
+It helps seekers reduce illusion, reclaim awareness, and live by design — not by default.
 
-## Show your support
+No hype. No hustle. No hiding.  
+Just tools, reflections, and reminders.
 
-If you like [AstroPaper](https://github.com/satnaing/astro-paper), consider giving it a star ⭐️.
+## 🧭 What You’ll Find Here
 
-Found a bug 🐛 or have an improvement ✨ in mind? Feel free to open an [issue](https://github.com/satnaing/astro-paper/issues), submit a [pull request](https://github.com/satnaing/astro-paper/pulls) or start a [discussion](https://github.com/satnaing/astro-paper/discussions).
+- Clarity, not content
+- Tools that help you need less, not do more
+- Essays, stacks, and systems — to awaken intelligence, not chase influence
+- A philosophy of freedom rooted in emptiness, sovereignty, and inner stillness
 
-If you find this theme helpful, you can also [sponsor me on GitHub](https://github.com/sponsors/satnaing) or [buy me a coffee](https://buymeacoffee.com/satnaing) to show your support — every penny counts.
+> You don’t need more. You need less illusion.
 
-Kyay zuu! 🙏🏼
+## ☸️ Who is it for?
+
+- Digital hermits and quiet rebels  
+- Thinkers, doers, seekers  
+- Anyone who chooses to live freely — without leaving the world
+
+---
+
+> “见路不走” — _See the road. Walk your own._
