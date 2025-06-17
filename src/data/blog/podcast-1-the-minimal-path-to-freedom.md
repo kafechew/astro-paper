@@ -1,14 +1,14 @@
 ---
 author: Kai
 pubDatetime: 2025-06-16T15:22:00Z
-modDatetime: 2025-06-16T15:22:00Z
+modDatetime: 2025-06-16T16:46:34.155Z
 title: Podcast 1 — The Minimal Path to Freedom
 slug: podcast-1-the-minimal-path-to-freedom
 featured: true
 draft: false
 tags:
   - podcast
-  - freedom
+  - english
 description: Episode 1 of the kheAI podcast — exploring the Minimal Path to Freedom, living sovereignly, and awakening intelligence.
 ---
 
