@@ -6,6 +6,8 @@ export interface Props {
   ariaLabel?: string;
   title?: string;
   disabled?: boolean;
+  target?: string; 
+  rel?: string; 
 }
 
 const {
@@ -16,7 +18,7 @@ const {
   title,
   disabled = false,
   target, 
-  rel, 
+  rel,
 } = Astro.props;
 ---
 
@@ -37,8 +39,8 @@ const {
       class:list={["group inline-block hover:text-accent", className]}
       aria-label={ariaLabel}
       title={title}
-      target={target} 
-      rel={rel}      
+      target={target}
+      rel={rel}
     >
       <slot />
     </a>
