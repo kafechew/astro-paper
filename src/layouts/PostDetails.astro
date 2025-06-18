@@ -265,6 +265,23 @@ const nextPost =
   }
   attachCopyButtons();
 
+  /** Make all links in article content open in new tab */
+  function makeArticleLinksOpenInNewTab() {
+    // Get all links in the article content only
+    const articleLinks = document.querySelectorAll('#article a[href]');
+    
+    articleLinks.forEach(link => {
+      const href = link.getAttribute('href');
+      
+      // Skip anchor links (internal page navigation)
+      if (href && !href.startsWith('#')) {
+        link.setAttribute('target', '_blank');
+        link.setAttribute('rel', 'noopener noreferrer');
+      }
+    });
+  }
+  makeArticleLinksOpenInNewTab();
+
   /* Go to page start after page swap */
   document.addEventListener("astro:after-swap", () =>
     window.scrollTo({ left: 0, top: 0, behavior: "instant" })
