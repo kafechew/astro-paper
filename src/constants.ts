@@ -31,13 +31,13 @@ export const SOCIALS: Social[] = [
   },
   {
     name: "LinkedIn",
-    href: "https://www.linkedin.com/in/kafechew/",
+    href: "https://www.linkedin.com/in/kheai/",
     linkTitle: `${SITE.title} on LinkedIn`,
     icon: IconLinkedin,
   },
   {
     name: "Mail",
-    href: "mailto:kheaichew@gmail.com",
+    href: "mailto:kai@kheai.com",
     linkTitle: `Send an email to ${SITE.title}`,
     icon: IconMail,
   },
@@ -76,7 +76,7 @@ export const SHARE_LINKS: Social[] = [
   },
   {
     name: "Mail",
-    href: "mailto:?subject=See%20this%20post&body=",
+    href: "mailto:?subject=See%20kheAI%20post&body=",
     linkTitle: `Share this post via email`,
     icon: IconMail,
   },
