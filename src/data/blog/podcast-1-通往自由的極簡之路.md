@@ -4,7 +4,7 @@ pubDatetime: 2025-06-16T15:22:00Z
 modDatetime: 2025-06-16T16:46:34.155Z
 title: Podcast 1 — 通往自由的極簡之路
 slug: podcast-1-通往自由的極簡之路
-featured: true
+featured: false
 draft: false
 tags:
   - podcast
