@@ -8,7 +8,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 - remove time from post datetime display (#546)
 - update edit post link styling and text (#545)
-- typos across codebase (#543)Add commentMore actions
+- typos across codebase (#543)
 
 ## v5.4.2 (2025-06-15)
 
