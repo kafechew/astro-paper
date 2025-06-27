@@ -13,7 +13,7 @@ export const SITE = {
   showBackButton: true, // show back button in post detail
   editPost: {
     enabled: false,
-    text: "Suggest Changes",
+    text: "Edit page",
     url: "https://github.com/kafechew/astro-paper/edit/main/",
   },
   dynamicOgImage: true,
