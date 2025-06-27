@@ -5,10 +5,9 @@ import Footer from "@/components/Footer.astro";
 import { quizSets } from "@/data/quiz";
 
 const pageTitle = "Bitcoin Quiz";
-const pageDesc = "Test your Bitcoin knowledge with this interactive quiz";
 ---
 
-<Layout title={pageTitle} desc={pageDesc}>
+<Layout title={pageTitle}>
   <Header />
   <main id="main-content">
     <section class="quiz-container">
@@ -75,7 +74,7 @@ const pageDesc = "Test your Bitcoin knowledge with this interactive quiz";
   <Footer />
 </Layout>
 
-<script define:vars={{ allQuizSets: quizSets }}>
+<script is:inline define:vars={{ allQuizSets: quizSets }}>
   class BitcoinQuiz {
     constructor(quizSets) {
       this.quizSets = quizSets;
