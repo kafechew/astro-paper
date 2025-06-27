@@ -2,7 +2,7 @@
 import Layout from "@/layouts/Layout.astro";
 import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
-import { bitcoinQuiz } from "@/data/quiz";
+import { quizSets } from "@/data/quiz";
 
 const pageTitle = "Bitcoin Quiz";
 const pageDesc = "Test your Bitcoin knowledge with this interactive quiz";
@@ -14,17 +14,33 @@ const pageDesc = "Test your Bitcoin knowledge with this interactive quiz";
     <section class="quiz-container">
       <div class="quiz-header">
         <h1>Bitcoin Knowledge Quiz</h1>
-        <p>Test your understanding of Bitcoin fundamentals</p>
+        <p>Test your understanding of Bitcoin - each session features a different quiz set!</p>
       </div>
 
       <div id="quiz-app">
-        <div id="question-container" class="question-card">
-          <div class="progress-bar">
-            <div id="progress" class="progress-fill"></div>
+        <div id="quiz-selector" class="selector-card">
+          <h2>🎲 Random Quiz Selected</h2>
+          <div class="selected-quiz">
+            <h3 id="quiz-title"></h3>
+            <p id="quiz-description"></p>
+            <div class="quiz-info">
+              <span id="question-count"></span> questions
+            </div>
+          </div>
+          <button id="start-btn" class="start-button">Start Quiz</button>
+          <button id="change-quiz-btn" class="change-button">🎲 Pick Different Quiz</button>
+        </div>
+
+        <div id="question-container" class="question-card" style="display: none;">
+          <div class="quiz-meta">
+            <div class="quiz-name" id="current-quiz-name"></div>
+            <div class="progress-bar">
+              <div id="progress" class="progress-fill"></div>
+            </div>
           </div>
           
           <div class="question-number">
-            Question <span id="current-q">1</span> of {bitcoinQuiz.length}
+            Question <span id="current-q">1</span> of <span id="total-q">4</span>
           </div>
           
           <h2 id="question-text"></h2>
@@ -38,6 +54,9 @@ const pageDesc = "Test your Bitcoin knowledge with this interactive quiz";
 
         <div id="results-container" class="results-card" style="display: none;">
           <h2>🎉 Quiz Complete!</h2>
+          <div class="completed-quiz">
+            <strong id="completed-quiz-name"></strong>
+          </div>
           <div class="score-display">
             <div class="score-circle">
               <span id="score-percentage">0%</span>
@@ -45,7 +64,10 @@ const pageDesc = "Test your Bitcoin knowledge with this interactive quiz";
             </div>
           </div>
           <p id="score-message"></p>
-          <button id="restart-btn" class="restart-button">Take Quiz Again</button>
+          <div class="result-actions">
+            <button id="restart-btn" class="restart-button">🔄 Retake This Quiz</button>
+            <button id="new-quiz-btn" class="new-quiz-button">🎲 Try Different Quiz</button>
+          </div>
         </div>
       </div>
     </section>
@@ -53,10 +75,11 @@ const pageDesc = "Test your Bitcoin knowledge with this interactive quiz";
   <Footer />
 </Layout>
 
-<script define:vars={{ quizData: bitcoinQuiz }}>
+<script define:vars={{ allQuizSets: quizSets }}>
   class BitcoinQuiz {
-    constructor(questions) {
-      this.questions = questions;
+    constructor(quizSets) {
+      this.quizSets = quizSets;
+      this.currentQuizSet = null;
       this.currentQuestion = 0;
       this.score = 0;
       this.selectedAnswer = null;
@@ -64,11 +87,35 @@ const pageDesc = "Test your Bitcoin knowledge with this interactive quiz";
     }
 
     init() {
-      this.showQuestion();
+      this.selectRandomQuiz();
       this.bindEvents();
     }
 
+    selectRandomQuiz() {
+      const randomIndex = Math.floor(Math.random() * this.quizSets.length);
+      this.currentQuizSet = this.quizSets[randomIndex];
+      this.showQuizSelector();
+    }
+
+    showQuizSelector() {
+      document.getElementById('quiz-title').textContent = this.currentQuizSet.title;
+      document.getElementById('quiz-description').textContent = this.currentQuizSet.description;
+      document.getElementById('question-count').textContent = this.currentQuizSet.questions.length;
+      
+      document.getElementById('quiz-selector').style.display = 'block';
+      document.getElementById('question-container').style.display = 'none';
+      document.getElementById('results-container').style.display = 'none';
+    }
+
     bindEvents() {
+      document.getElementById('start-btn').addEventListener('click', () => {
+        this.startQuiz();
+      });
+      
+      document.getElementById('change-quiz-btn').addEventListener('click', () => {
+        this.selectRandomQuiz();
+      });
+      
       document.getElementById('next-btn').addEventListener('click', () => {
         this.nextQuestion();
       });
@@ -76,13 +123,32 @@ const pageDesc = "Test your Bitcoin knowledge with this interactive quiz";
       document.getElementById('restart-btn').addEventListener('click', () => {
         this.restart();
       });
+      
+      document.getElementById('new-quiz-btn').addEventListener('click', () => {
+        this.selectRandomQuiz();
+      });
+    }
+
+    startQuiz() {
+      this.currentQuestion = 0;
+      this.score = 0;
+      this.selectedAnswer = null;
+      
+      document.getElementById('quiz-selector').style.display = 'none';
+      document.getElementById('question-container').style.display = 'block';
+      document.getElementById('results-container').style.display = 'none';
+      
+      document.getElementById('current-quiz-name').textContent = this.currentQuizSet.title;
+      document.getElementById('total-q').textContent = this.currentQuizSet.questions.length;
+      
+      this.showQuestion();
     }
 
     showQuestion() {
-      const question = this.questions[this.currentQuestion];
+      const question = this.currentQuizSet.questions[this.currentQuestion];
       
       // Update progress
-      const progress = ((this.currentQuestion + 1) / this.questions.length) * 100;
+      const progress = ((this.currentQuestion + 1) / this.currentQuizSet.questions.length) * 100;
       document.getElementById('progress').style.width = progress + '%';
       
       // Update question number
@@ -110,7 +176,7 @@ const pageDesc = "Test your Bitcoin knowledge with this interactive quiz";
 
     selectAnswer(answerIndex) {
       this.selectedAnswer = answerIndex;
-      const question = this.questions[this.currentQuestion];
+      const question = this.currentQuizSet.questions[this.currentQuestion];
       const options = document.querySelectorAll('.option');
       
       // Remove previous selections
@@ -134,7 +200,7 @@ const pageDesc = "Test your Bitcoin knowledge with this interactive quiz";
       // Show next button
       document.getElementById('next-btn').style.display = 'block';
       document.getElementById('next-btn').textContent = 
-        this.currentQuestion === this.questions.length - 1 ? 'See Results' : 'Next Question';
+        this.currentQuestion === this.currentQuizSet.questions.length - 1 ? 'See Results' : 'Next Question';
     }
 
     showExplanation(explanation) {
@@ -147,7 +213,7 @@ const pageDesc = "Test your Bitcoin knowledge with this interactive quiz";
     nextQuestion() {
       this.currentQuestion++;
       
-      if (this.currentQuestion < this.questions.length) {
+      if (this.currentQuestion < this.currentQuizSet.questions.length) {
         this.showQuestion();
       } else {
         this.showResults();
@@ -158,10 +224,12 @@ const pageDesc = "Test your Bitcoin knowledge with this interactive quiz";
       document.getElementById('question-container').style.display = 'none';
       document.getElementById('results-container').style.display = 'block';
       
-      const percentage = Math.round((this.score / this.questions.length) * 100);
+      document.getElementById('completed-quiz-name').textContent = this.currentQuizSet.title;
+      
+      const percentage = Math.round((this.score / this.currentQuizSet.questions.length) * 100);
       
       document.getElementById('score-percentage').textContent = percentage + '%';
-      document.getElementById('score-fraction').textContent = `${this.score}/${this.questions.length}`;
+      document.getElementById('score-fraction').textContent = `${this.score}/${this.currentQuizSet.questions.length}`;
       
       let message = '';
       if (percentage >= 80) message = 'Excellent! You really know Bitcoin! 🏆';
@@ -172,19 +240,12 @@ const pageDesc = "Test your Bitcoin knowledge with this interactive quiz";
     }
 
     restart() {
-      this.currentQuestion = 0;
-      this.score = 0;
-      this.selectedAnswer = null;
-      
-      document.getElementById('question-container').style.display = 'block';
-      document.getElementById('results-container').style.display = 'none';
-      
-      this.showQuestion();
+      this.startQuiz();
     }
   }
 
-  // Start the quiz
-  new BitcoinQuiz(quizData);
+  // Start the quiz app
+  new BitcoinQuiz(allQuizSets);
 </script>
 
 <style>
@@ -205,11 +266,45 @@ const pageDesc = "Test your Bitcoin knowledge with this interactive quiz";
     color: var(--color-text-base);
   }
 
-  .question-card, .results-card {
+  .selector-card, .question-card, .results-card {
     background: var(--color-card);
     border-radius: 12px;
     padding: 2rem;
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  }
+
+  .selector-card {
+    text-align: center;
+  }
+
+  .selected-quiz {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: var(--color-card-muted);
+    border-radius: 8px;
+    border-left: 4px solid #667eea;
+  }
+
+  .selected-quiz h3 {
+    margin-bottom: 0.5rem;
+    color: #667eea;
+  }
+
+  .quiz-info {
+    margin-top: 1rem;
+    font-weight: 600;
+    color: var(--color-text-muted);
+  }
+
+  .quiz-meta {
+    margin-bottom: 1.5rem;
+  }
+
+  .quiz-name {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    margin-bottom: 0.5rem;
+    font-weight: 600;
   }
 
   .progress-bar {
@@ -217,7 +312,6 @@ const pageDesc = "Test your Bitcoin knowledge with this interactive quiz";
     height: 8px;
     background: var(--color-border);
     border-radius: 4px;
-    margin-bottom: 1.5rem;
     overflow: hidden;
   }
 
@@ -280,7 +374,7 @@ const pageDesc = "Test your Bitcoin knowledge with this interactive quiz";
     border-left: 4px solid #667eea;
   }
 
-  .next-button, .restart-button {
+  .start-button, .change-button, .next-button, .restart-button, .new-quiz-button {
     background: linear-gradient(135deg, #667eea, #764ba2);
     color: white;
     border: none;
@@ -290,14 +384,30 @@ const pageDesc = "Test your Bitcoin knowledge with this interactive quiz";
     font-size: 1rem;
     font-weight: 600;
     transition: transform 0.2s ease;
+    margin: 0.5rem;
   }
 
-  .next-button:hover, .restart-button:hover {
+  .change-button {
+    background: linear-gradient(135deg, #28a745, #20c997);
+  }
+
+  .new-quiz-button {
+    background: linear-gradient(135deg, #17a2b8, #20c997);
+  }
+
+  .start-button:hover, .change-button:hover, .next-button:hover, 
+  .restart-button:hover, .new-quiz-button:hover {
     transform: translateY(-2px);
   }
 
   .results-card {
     text-align: center;
+  }
+
+  .completed-quiz {
+    margin-bottom: 1rem;
+    color: var(--color-text-muted);
+    font-size: 1.1rem;
   }
 
   .score-display {
@@ -329,12 +439,20 @@ const pageDesc = "Test your Bitcoin knowledge with this interactive quiz";
     opacity: 0.9;
   }
 
+  .result-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
   @media (max-width: 640px) {
     .quiz-header h1 {
       font-size: 2rem;
     }
     
-    .question-card, .results-card {
+    .selector-card, .question-card, .results-card {
       padding: 1.5rem;
     }
     
@@ -345,6 +463,16 @@ const pageDesc = "Test your Bitcoin knowledge with this interactive quiz";
     
     #score-percentage {
       font-size: 2rem;
+    }
+
+    .result-actions {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .start-button, .change-button, .next-button, .restart-button, .new-quiz-button {
+      width: 100%;
+      max-width: 300px;
     }
   }
 </style>
