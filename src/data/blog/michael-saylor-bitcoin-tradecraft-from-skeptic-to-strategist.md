@@ -7,7 +7,7 @@ featured: false
 draft: false
 tags:
   - bitcoin
-  - Strategy
+  - treasury
   - finance
   - english
 description: Michael Saylor didn’t just buy Bitcoin—he engineered a new corporate model. Through structured finance, asymmetric bets, and unwavering conviction, he turned MicroStrategy into Strategy, a Bitcoin-powered enterprise.
