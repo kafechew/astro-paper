@@ -1,8 +1,8 @@
 export const SITE = {
   website: "https://kheai.com/", 
   author: "Kai",
-  profile: "https://www.linkedin.com/in/kafechew",
-  desc: "Kindle Harnessing Emptiness. Awaken Intelligence. Explore the Minimal Path to Freedom.",
+  profile: "https://www.linkedin.com/in/kheai",
+  desc: "Minimal Path to Freedom. Tools for sovereign living, from Bitcoin treasury & Lightning infrastructure to AI systems for digital independence. Publicly built.",
   title: "kheAI",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
