@@ -3,7 +3,6 @@
 import Layout from "@/layouts/Layout.astro";
 import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
-import { SITE } from "@/config";
 
 const pageTitle = "Bitcoin Treasury Dashboard";
 ---
@@ -11,6 +10,7 @@ const pageTitle = "Bitcoin Treasury Dashboard";
 <Layout title={pageTitle}>
   <Header activeNav="dashboard" />
   <main id="main-content">
+    <!-- Your existing HTML content remains the same -->
     <section class="dashboard-container">
       <div class="dashboard-header">
         <h1>Bitcoin Treasury & Lightning Dashboard</h1>
@@ -161,7 +161,6 @@ const pageTitle = "Bitcoin Treasury Dashboard";
         </div>
       </div>
 
-
       <!-- Holdings Breakdown -->
       <div class="holdings-section">
         <h2>Bitcoin Holdings Breakdown</h2>
@@ -213,8 +212,6 @@ const pageTitle = "Bitcoin Treasury Dashboard";
 
       <!-- Additional Metrics Section -->
       <div class="metrics-grid">
-        
-
         <div class="metric-card">
           <h3>🔒 Security Status</h3>
           <div class="security-items">
@@ -304,7 +301,9 @@ const pageTitle = "Bitcoin Treasury Dashboard";
   <Footer />
 </Layout>
 
+<!-- Your existing styles remain the same -->
 <style>
+  /* All your existing CSS styles remain exactly the same */
   /* Root variables for consistent theming */
   :root {
     --dashboard-bg: #f8fafc;
@@ -960,15 +959,29 @@ const pageTitle = "Bitcoin Treasury Dashboard";
   let usdMyrRate = 4.45;
   let isRefreshing = false;
 
+  // Type-safe element getter
+  function getElement(id: string): HTMLElement | null {
+    return document.getElementById(id);
+  }
+
+  // Type-safe element getter with assertion
+  function getElementSafe(id: string): HTMLElement {
+    const element = document.getElementById(id);
+    if (!element) {
+      throw new Error(`Element with id '${id}' not found`);
+    }
+    return element;
+  }
+
   // Initialize dashboard
-  async function initDashboard() {
+  async function initDashboard(): Promise<void> {
     updateTimestamp();
     await fetchAllData();
     setupEventListeners();
   }
 
   // Fetch all data at once
-  async function fetchAllData() {
+  async function fetchAllData(): Promise<void> {
     if (isRefreshing) return;
     
     setRefreshingState(true);
@@ -991,7 +1004,7 @@ const pageTitle = "Bitcoin Treasury Dashboard";
   }
 
   // Fetch market data from CoinGecko
-  async function fetchMarketData() {
+  async function fetchMarketData(): Promise<void> {
     try {
       const response = await fetch(
         `${API_CONFIG.coingecko}/simple/price?ids=bitcoin&vs_currencies=usd,myr&include_market_cap=true&include_24hr_vol=true&include_24hr_change=true`
@@ -1004,32 +1017,43 @@ const pageTitle = "Bitcoin Treasury Dashboard";
       currentPriceMYR = bitcoin.myr || (currentPriceUSD * usdMyrRate);
       
       // Update USD price with animation
-      const priceElementUSD = document.getElementById('btc-price-usd');
-      priceElementUSD.textContent = `$${currentPriceUSD.toLocaleString()}`;
+      const priceElementUSD = getElement('btc-price-usd');
+      if (priceElementUSD) {
+        priceElementUSD.textContent = `$${currentPriceUSD.toLocaleString()}`;
+      }
       
       // Update MYR price
-      const priceElementMYR = document.getElementById('btc-price-myr');
-      priceElementMYR.textContent = `RM ${currentPriceMYR.toLocaleString()}`;
+      const priceElementMYR = getElement('btc-price-myr');
+      if (priceElementMYR) {
+        priceElementMYR.textContent = `RM ${currentPriceMYR.toLocaleString()}`;
+      }
       
       // Add flash effect for significant price changes
       if (oldPriceUSD !== 0 && Math.abs(currentPriceUSD - oldPriceUSD) > 50) {
         const flashClass = currentPriceUSD > oldPriceUSD ? 'price-up' : 'price-down';
-        priceElementUSD.classList.add(flashClass);
-        priceElementMYR.classList.add(flashClass);
-        setTimeout(() => {
-          priceElementUSD.classList.remove(flashClass);
-          priceElementMYR.classList.remove(flashClass);
-        }, 1000);
+        if (priceElementUSD) {
+          priceElementUSD.classList.add(flashClass);
+          setTimeout(() => priceElementUSD.classList.remove(flashClass), 1000);
+        }
+        if (priceElementMYR) {
+          priceElementMYR.classList.add(flashClass);
+          setTimeout(() => priceElementMYR.classList.remove(flashClass), 1000);
+        }
       }
       
       // Update 24h change
       const change24h = bitcoin.usd_24h_change;
-      const changeElement = document.getElementById('price-change');
-      changeElement.textContent = `${change24h > 0 ? '+' : ''}${change24h.toFixed(2)}%`;
-      changeElement.className = `metric-value ${change24h > 0 ? 'profit' : 'loss'}`;
+      const changeElement = getElement('price-change');
+      if (changeElement) {
+        changeElement.textContent = `${change24h > 0 ? '+' : ''}${change24h.toFixed(2)}%`;
+        changeElement.className = `metric-value ${change24h > 0 ? 'profit' : 'loss'}`;
+      }
       
       // Update market cap
-      document.getElementById('market-cap').textContent = `$${(bitcoin.usd_market_cap / 1e9).toFixed(0)}B`;
+      const marketCapElement = getElement('market-cap');
+      if (marketCapElement) {
+        marketCapElement.textContent = `$${(bitcoin.usd_market_cap / 1e9).toFixed(0)}B`;
+      }
       
       // Update portfolio values
       updatePortfolioValues(currentPriceUSD, currentPriceMYR);
@@ -1042,15 +1066,21 @@ const pageTitle = "Bitcoin Treasury Dashboard";
   }
 
   // Fetch USD/MYR exchange rate
-  async function fetchUSDMYRRate() {
+  async function fetchUSDMYRRate(): Promise<void> {
     try {
       const response = await fetch(API_CONFIG.exchangerate);
       const data = await response.json();
       
       if (data.rates && data.rates.MYR) {
         usdMyrRate = data.rates.MYR;
-        document.getElementById('usd-myr-rate').textContent = usdMyrRate.toFixed(2);
-        document.getElementById('fx-last-update').textContent = 'Just now';
+        const rateElement = getElement('usd-myr-rate');
+        if (rateElement) {
+          rateElement.textContent = usdMyrRate.toFixed(2);
+        }
+        const updateElement = getElement('fx-last-update');
+        if (updateElement) {
+          updateElement.textContent = 'Just now';
+        }
       }
     } catch (error) {
       console.error('Error fetching USD/MYR rate:', error);
@@ -1059,7 +1089,7 @@ const pageTitle = "Bitcoin Treasury Dashboard";
   }
 
   // Try backup price API
-  async function tryBackupPriceAPI() {
+  async function tryBackupPriceAPI(): Promise<void> {
     try {
       const response = await fetch(`${API_CONFIG.binance}/ticker/price?symbol=BTCUSDT`);
       const data = await response.json();
@@ -1069,8 +1099,16 @@ const pageTitle = "Bitcoin Treasury Dashboard";
         currentPriceUSD = price;
         currentPriceMYR = price * usdMyrRate;
         
-        document.getElementById('btc-price-usd').textContent = `$${price.toLocaleString()}`;
-        document.getElementById('btc-price-myr').textContent = `RM ${currentPriceMYR.toLocaleString()}`;
+        const usdElement = getElement('btc-price-usd');
+        if (usdElement) {
+          usdElement.textContent = `$${price.toLocaleString()}`;
+        }
+        
+        const myrElement = getElement('btc-price-myr');
+        if (myrElement) {
+          myrElement.textContent = `RM ${currentPriceMYR.toLocaleString()}`;
+        }
+        
         updatePortfolioValues(currentPriceUSD, currentPriceMYR);
       }
     } catch (error) {
@@ -1079,7 +1117,7 @@ const pageTitle = "Bitcoin Treasury Dashboard";
   }
 
   // Fetch Fear & Greed Index
-  async function fetchFearGreedIndex() {
+  async function fetchFearGreedIndex(): Promise<void> {
     try {
       const response = await fetch(`${API_CONFIG.feargreed}?limit=1`);
       const data = await response.json();
@@ -1088,11 +1126,16 @@ const pageTitle = "Bitcoin Treasury Dashboard";
       const value = parseInt(fng.value);
       const classification = fng.value_classification;
       
-      document.getElementById('fear-greed-value').textContent = `${value} (${classification})`;
+      const fearGreedElement = getElement('fear-greed-value');
+      if (fearGreedElement) {
+        fearGreedElement.textContent = `${value} (${classification})`;
+      }
       
       // Update sentiment bar
-      const sentimentFill = document.getElementById('sentiment-fill');
-      sentimentFill.style.left = `${value}%`;
+      const sentimentFill = getElement('sentiment-fill') as HTMLElement;
+      if (sentimentFill && sentimentFill.style) {
+        sentimentFill.style.left = `${value}%`;
+      }
       
     } catch (error) {
       console.error('Error fetching Fear & Greed index:', error);
@@ -1100,7 +1143,7 @@ const pageTitle = "Bitcoin Treasury Dashboard";
   }
 
   // Fetch exchange rates
-  async function fetchExchangeRates() {
+  async function fetchExchangeRates(): Promise<void> {
     try {
       const response = await fetch(
         `${API_CONFIG.coingecko}/simple/price?ids=bitcoin&vs_currencies=usd`
@@ -1115,15 +1158,27 @@ const pageTitle = "Bitcoin Treasury Dashboard";
         { name: 'Kraken', priceUSD: basePrice + (Math.random() - 0.5) * 50 }
       ];
       
-      const exchangeContainer = document.getElementById('exchange-rates');
+      const exchangeContainer = getElement('exchange-rates');
+      if (!exchangeContainer) return;
       
-      // Update existing exchange items (excluding Luno which is handled separately)
+      // Update existing exchange items
       exchanges.forEach((exchange, index) => {
         const exchangeItems = exchangeContainer.querySelectorAll('.exchange-item');
-        if (exchangeItems[index] && exchangeItems[index].querySelector('.exchange-name').textContent === exchange.name) {
-          const priceMYR = exchange.priceUSD * usdMyrRate;
-          exchangeItems[index].querySelector('.exchange-price-usd').textContent = `$${Math.round(exchange.priceUSD).toLocaleString()}`;
-          exchangeItems[index].querySelector('.exchange-price-myr').textContent = `RM ${Math.round(priceMYR).toLocaleString()}`;
+        const exchangeItem = exchangeItems[index];
+        if (exchangeItem) {
+          const nameElement = exchangeItem.querySelector('.exchange-name');
+          if (nameElement && nameElement.textContent === exchange.name) {
+            const priceMYR = exchange.priceUSD * usdMyrRate;
+            const usdPriceElement = exchangeItem.querySelector('.exchange-price-usd');
+            const myrPriceElement = exchangeItem.querySelector('.exchange-price-myr');
+            
+            if (usdPriceElement) {
+              usdPriceElement.textContent = `$${Math.round(exchange.priceUSD).toLocaleString()}`;
+            }
+            if (myrPriceElement) {
+              myrPriceElement.textContent = `RM ${Math.round(priceMYR).toLocaleString()}`;
+            }
+          }
         }
       });
       
@@ -1133,69 +1188,104 @@ const pageTitle = "Bitcoin Treasury Dashboard";
   }
 
   // Update portfolio values
-  function updatePortfolioValues(priceUSD, priceMYR) {
+  function updatePortfolioValues(priceUSD: number, priceMYR: number): void {
     const totalValueUSD = PORTFOLIO.totalBTC * priceUSD;
     const totalValueMYR = PORTFOLIO.totalBTC * priceMYR;
     const unrealizedPnL = totalValueUSD - (PORTFOLIO.totalBTC * PORTFOLIO.avgCostBasis);
     
-    document.getElementById('usd-value').textContent = `$${totalValueUSD.toLocaleString()}`;
-    document.getElementById('myr-value').textContent = `RM ${totalValueMYR.toLocaleString()}`;
+    const usdValueElement = getElement('usd-value');
+    if (usdValueElement) {
+      usdValueElement.textContent = `$${totalValueUSD.toLocaleString()}`;
+    }
     
-    const pnlElement = document.getElementById('unrealized-pnl');
-    pnlElement.textContent = `${unrealizedPnL > 0 ? '+' : ''}$${unrealizedPnL.toLocaleString()}`;
-    pnlElement.className = `metric-value ${unrealizedPnL > 0 ? 'profit' : 'loss'}`;
+    const myrValueElement = getElement('myr-value');
+    if (myrValueElement) {
+      myrValueElement.textContent = `RM ${totalValueMYR.toLocaleString()}`;
+    }
+    
+    const pnlElement = getElement('unrealized-pnl');
+    if (pnlElement) {
+      pnlElement.textContent = `${unrealizedPnL > 0 ? '+' : ''}$${unrealizedPnL.toLocaleString()}`;
+      pnlElement.className = `metric-value ${unrealizedPnL > 0 ? 'profit' : 'loss'}`;
+    }
     
     // Update individual holdings
-    document.getElementById('cold-storage-usd').textContent = 
-      `$${(PORTFOLIO.holdings.coldStorage * priceUSD).toLocaleString()}`;
-    document.getElementById('cold-storage-myr').textContent = 
-      `RM ${(PORTFOLIO.holdings.coldStorage * priceMYR).toLocaleString()}`;
-      
-    document.getElementById('lightning-usd').textContent = 
-      `$${(PORTFOLIO.holdings.lightning * priceUSD).toLocaleString()}`;
-    document.getElementById('lightning-myr').textContent = 
-      `RM ${(PORTFOLIO.holdings.lightning * priceMYR).toLocaleString()}`;
-      
-    document.getElementById('hot-wallet-usd').textContent = 
-      `$${(PORTFOLIO.holdings.hotWallet * priceUSD).toLocaleString()}`;
-    document.getElementById('hot-wallet-myr').textContent = 
-      `RM ${(PORTFOLIO.holdings.hotWallet * priceMYR).toLocaleString()}`;
+    const coldStorageUSD = getElement('cold-storage-usd');
+    if (coldStorageUSD) {
+      coldStorageUSD.textContent = `$${(PORTFOLIO.holdings.coldStorage * priceUSD).toLocaleString()}`;
+    }
+    
+    const coldStorageMYR = getElement('cold-storage-myr');
+    if (coldStorageMYR) {
+      coldStorageMYR.textContent = `RM ${(PORTFOLIO.holdings.coldStorage * priceMYR).toLocaleString()}`;
+    }
+    
+    const lightningUSD = getElement('lightning-usd');
+    if (lightningUSD) {
+      lightningUSD.textContent = `$${(PORTFOLIO.holdings.lightning * priceUSD).toLocaleString()}`;
+    }
+    
+    const lightningMYR = getElement('lightning-myr');
+    if (lightningMYR) {
+      lightningMYR.textContent = `RM ${(PORTFOLIO.holdings.lightning * priceMYR).toLocaleString()}`;
+    }
+    
+    const hotWalletUSD = getElement('hot-wallet-usd');
+    if (hotWalletUSD) {
+      hotWalletUSD.textContent = `$${(PORTFOLIO.holdings.hotWallet * priceUSD).toLocaleString()}`;
+    }
+    
+    const hotWalletMYR = getElement('hot-wallet-myr');
+    if (hotWalletMYR) {
+      hotWalletMYR.textContent = `RM ${(PORTFOLIO.holdings.hotWallet * priceMYR).toLocaleString()}`;
+    }
   }
 
   // Set refreshing state
-  function setRefreshingState(refreshing) {
+  function setRefreshingState(refreshing: boolean): void {
     isRefreshing = refreshing;
-    const refreshBtn = document.getElementById('refresh-btn');
+    const refreshBtn = getElement('refresh-btn') as HTMLButtonElement;
     
-    if (refreshing) {
-      refreshBtn.classList.add('refreshing');
-      refreshBtn.textContent = 'Refreshing...';
-      refreshBtn.disabled = true;
-    } else {
-      refreshBtn.classList.remove('refreshing');
-      refreshBtn.textContent = '🔄 Refresh Data';
-      refreshBtn.disabled = false;
+    if (refreshBtn) {
+      if (refreshing) {
+        refreshBtn.classList.add('refreshing');
+        refreshBtn.textContent = 'Refreshing...';
+        refreshBtn.disabled = true;
+      } else {
+        refreshBtn.classList.remove('refreshing');
+        refreshBtn.textContent = '🔄 Refresh Data';
+        refreshBtn.disabled = false;
+      }
     }
   }
 
   // Update timestamp
-  function updateTimestamp() {
-    document.getElementById('last-update').textContent = new Date().toLocaleString();
+  function updateTimestamp(): void {
+    const lastUpdateElement = getElement('last-update');
+    if (lastUpdateElement) {
+      lastUpdateElement.textContent = new Date().toLocaleString();
+    }
   }
 
   // Setup event listeners
-  function setupEventListeners() {
+  function setupEventListeners(): void {
     // Refresh button
-    document.getElementById('refresh-btn').addEventListener('click', async () => {
-      await fetchAllData();
-      updateTimestamp();
-    });
+    const refreshBtn = getElement('refresh-btn');
+    if (refreshBtn) {
+      refreshBtn.addEventListener('click', async () => {
+        await fetchAllData();
+        updateTimestamp();
+      });
+    }
 
     // Keyboard shortcuts
     document.addEventListener('keydown', (e) => {
       if ((e.ctrlKey || e.metaKey) && e.key === 'r') {
         e.preventDefault();
-        document.getElementById('refresh-btn').click();
+        const refreshBtn = getElement('refresh-btn') as HTMLButtonElement;
+        if (refreshBtn) {
+          refreshBtn.click();
+        }
       }
     });
 
@@ -1209,17 +1299,20 @@ const pageTitle = "Bitcoin Treasury Dashboard";
     setTimeout(() => {
       const bars = document.querySelectorAll('.holding-fill');
       bars.forEach(bar => {
-        const width = bar.style.width;
-        bar.style.width = '0%';
-        setTimeout(() => {
-          bar.style.width = width;
-        }, 100);
+        const htmlBar = bar as HTMLElement;
+        if (htmlBar.style) {
+          const width = htmlBar.style.width;
+          htmlBar.style.width = '0%';
+          setTimeout(() => {
+            htmlBar.style.width = width;
+          }, 100);
+        }
       });
     }, 500);
   }
 
   // Show notification
-  function showNotification(message, type) {
+  function showNotification(message: string, type: string): void {
     const notification = document.createElement('div');
     notification.className = `notification ${type}`;
     notification.textContent = message;
@@ -1249,11 +1342,28 @@ const pageTitle = "Bitcoin Treasury Dashboard";
   document.addEventListener('DOMContentLoaded', initDashboard);
 
   // Debug functions
+  declare global {
+    interface Window {
+      dashboardDebug: {
+        fetchAllData: () => Promise<void>;
+        currentPriceUSD: () => number;
+        currentPriceMYR: () => number;
+        usdMyrRate: () => number;
+        refreshData: () => void;
+      };
+    }
+  }
+
   window.dashboardDebug = {
     fetchAllData,
     currentPriceUSD: () => currentPriceUSD,
     currentPriceMYR: () => currentPriceMYR,
     usdMyrRate: () => usdMyrRate,
-    refreshData: () => document.getElementById('refresh-btn').click()
+    refreshData: () => {
+      const refreshBtn = getElement('refresh-btn') as HTMLButtonElement;
+      if (refreshBtn) {
+        refreshBtn.click();
+      }
+    }
   };
 </script>
