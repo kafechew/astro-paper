@@ -7,10 +7,6 @@ title: "About kheAI"
 
 **kheAI** stands for _Kindle Harnessing Emptiness, Awaken Intelligence_.
 
-It’s not a brand.  
-Not a startup.  
-Not a pitch deck.
-
 It’s a quiet signal in a noisy system —  
 A digital hermitage built on Bitcoin and clarity.
 
@@ -18,66 +14,84 @@ A digital hermitage built on Bitcoin and clarity.
 
 ## 🌱 What is kheAI?
 
-**kheAI** is a minimalist journey to sovereignty.  
-A slow system for living freely — in mind, in motion, and in money.
+**kheAI** is a minimalist path to freedom —  
+for sovereign builders, digital hermits, and quiet entrepreneurs.
 
-It began with sats.  
-It grows through Lightning.  
-It lives by a principle: *own less illusion, hold more truth*.
-
-The path is threefold:
-
-- **Body** → stillness through simplicity  
-- **Mind** → awareness without attachment  
-- **Finance** → antifragility via Bitcoin  
-
-It’s not about doing more.  
-It’s about needing less — and reclaiming what matters.
+We offer sats-based systems and slow finance tools:  
+to hold what matters, automate the rest, and reclaim time.
 
 ---
 
-## ⚡ Why Bitcoin? Why Lightning?
+## ⚙️ What kheAI Does
 
-Because you can’t be free if your money isn’t.  
-Because in a system that inflates, truth deflates.  
-Because silence needs sovereignty — and sats provide both.
+### 🟡 1. Bitcoin Treasury
 
-Bitcoin is kheAI’s treasury.  
-Lightning is its bloodstream.
+- Accumulate BTC as long-term business reserves  
+- Strategically DCA and self-custody via cold wallets  
+- Leverage BTC for collateralized liquidity (where allowed)  
+- Align with antifragile treasury principles for Southeast Asia
 
-This site is built atop that belief.  
-Every post, every product, every sat — held with intention.
-
----
-
-## 🧭 What You’ll Find Here
-
-- Quiet essays on freedom, friction, and form  
-- Sats-based tools that empower restraint, not consumption  
-- Routing logs, open dashboards, and yield reports — for those who want to see what Bitcoin *does*, not just what it *is*  
-- Practical guides for the sovereign path: cold wallets, Lightning tips, public transparency  
-- An ethos for the digital monk: hold your own keys, and your own mind
-
-> You don’t need more freedom.  
-> You need fewer dependencies.
+> Don’t sell. Delay. Stack quietly.
 
 ---
 
-## ☸️ Who Is kheAI For?
+### ⚡ 2. Lightning Services
 
-- Digital hermits and Lightning pilgrims  
-- Builders who don’t want bosses  
-- Thinkers tired of algorithmic noise  
-- Anyone seeking sovereignty in an empire of illusion
+**kheAI acts as a Lightning Service Provider (LSP):**
+
+- Help creators and businesses accept LN payments  
+- Set up non-custodial wallets and paywalls  
+- Offer liquidity-as-a-service: rebalancing, leasing, etc.  
+- Enable decentralized payments for content, SaaS, and services
+
+> Bitcoin is savings. Lightning is income.
+
+---
+
+### 💧 3. Sovereign Liquidity Strategy
+
+- Delay cash outflows with balance transfers and float  
+- Park idle funds in high-yield accounts 
+- Map financial runway and business burn rate  
+- Use crypto as strategic working capital, not risk
+
+> Borrow time, not stress. Delay the sell.  
+> Buy back your time.
+
+---
+
+### 🧘 4. Sovereign Philosophy & Tools
+
+**kheAI is built on principles of:**
+
+- CoastFIRE & antifragility  
+- Minimalist wealth planning  
+- Opting out, without fleeing the system
+
+We share:
+
+- Open dashboards, trackers, and node reports  
+- Bitcoin/Lightning education for quiet operators  
+- Systems to live freer, not louder
+
+---
+
+## 🧭 Who kheAI is For
+
+- Micro-entrepreneurs stacking sats with purpose  
+- Digital monks seeking clarity over noise  
+- Creators tired of middlemen  
+- Small businesses managing capital like a sovereign
 
 ---
 
 ## 🔑 Final Words
 
 This isn’t a platform.  
-It’s a path.  
-It’s kheAI — a self-funded, sats-first Lightning node  
-quietly routing value, writing in peace, and holding Bitcoin in the open.
+It’s a path.
+
+It’s **kheAI** — a sats-first, quietly optimized node  
+routing Bitcoin, writing in peace,  
+and helping others hold their own keys.
 
 > 见路不走 — *See the road. Walk your own.*
-
