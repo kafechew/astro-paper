@@ -39,6 +39,7 @@ to hold what matters, automate the rest, and reclaim time.
 
 **kheAI acts as a Lightning Service Provider (LSP):**
 
+- [**Node-in-a-box**](/nodes-in-a-box): Raspberry Pi & Jetson Nano hardware preloaded with Bitcoin + Lightning (or Local LLM) 
 - Help creators and businesses accept LN payments  
 - Set up non-custodial wallets and paywalls  
 - Offer liquidity-as-a-service: rebalancing, leasing, etc.  
@@ -70,8 +71,8 @@ to hold what matters, automate the rest, and reclaim time.
 
 We share:
 
-- Open dashboards, trackers, and node reports  
-- Bitcoin/Lightning education for quiet operators  
+- [Open dashboards, trackers, and node reports](/dashboard)  
+- Bitcoin/Lightning education, i.e. [content](/posts) & [quiz](/quiz), for quiet operators  
 - Systems to live freer, not louder
 
 ---

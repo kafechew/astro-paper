@@ -1,0 +1,850 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import { SITE } from "@/config";
+
+const pageTitle = "Nodes in a Box - Pre-configured Bitcoin & Lightning Nodes";
+const pageDesc = "Plug-and-play Bitcoin sovereignty for Malaysia & Southeast Asia. Pre-configured hardware with Bitcoin Core, Lightning Network, and optional AI integration. Built in Malaysia, paid in sats.";
+---
+
+<Layout title={`${pageTitle} | ${SITE.title}`} description={pageDesc}>
+  <Header />
+  <main id="main-content">
+    
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <blockquote class="hero-quote">
+            You don't truly own Bitcoin — until your <strong>own node</strong> tells you that you do.
+          </blockquote>
+          <h1>Nodes in a Box</h1>
+          <p class="hero-subtitle">🔌 Pre-configured Bitcoin + Lightning Nodes for Malaysia & Southeast Asia</p>
+          <p class="hero-description">
+            Whether you're a freedom-seeker, educator, Lightning entrepreneur, or someone who wants to understand how Bitcoin <em>really</em> works — this is for you.
+          </p>
+          <div class="hero-cta">
+            <a href="#configurations" class="cta-primary">Choose Your Node</a>
+            <a href="#why-malaysia" class="cta-secondary">Why Malaysia?</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem">
+      <div class="container">
+        <h2>⚠️ The Problem: You're Not Running a Node</h2>
+        <p class="section-intro">Let's be honest.</p>
+        
+        <div class="problem-grid">
+          <div class="problem-card">
+            <h3>Most Malaysians still:</h3>
+            <ul>
+              <li>Rely on centralized exchanges</li>
+              <li>Use custodial wallets</li>
+              <li>Trust others to verify their Bitcoin</li>
+            </ul>
+            <p class="problem-note">That's fine to start — but <strong>it's not where you stop</strong>.</p>
+          </div>
+          
+          <div class="problem-card">
+            <h3>🚧 Bitcoin Isn't Plug-and-Play (Yet)</h3>
+            <p>Most people won't SSH into a terminal, sync <code>bitcoind</code>, or debug <code>lnd.conf</code>.</p>
+            <p><strong>It's enough to scare off most people.</strong></p>
+            <p class="solution-hint">That's where we come in.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="solution">
+      <div class="container">
+        <h2>✅ Our Solution: Turnkey Bitcoin Infrastructure</h2>
+        <p class="section-intro">We're offering <strong>plug-and-play hardware</strong> built for <strong>sovereign simplicity</strong>:</p>
+        
+        <div class="solution-grid">
+          <div class="solution-card">
+            <h3>🧱 Hardware Options</h3>
+            <ul>
+              <li>Raspberry Pi 4 (4GB or 8GB)</li>
+              <li>Jetson Nano (LLM & AI-ready)</li>
+              <li>Coming Soon: NUC for high-performance routing</li>
+            </ul>
+          </div>
+          
+          <div class="solution-card">
+            <h3>🔐 Secure Bitcoin Stack</h3>
+            <ul>
+              <li>Bitcoin Core (pruned or full node)</li>
+              <li>LND or Core Lightning (your choice)</li>
+              <li>Electrs (for hardware wallets)</li>
+              <li>Mempool explorer</li>
+              <li>RTL (web UI) and Tor support</li>
+            </ul>
+          </div>
+          
+          <div class="solution-card">
+            <h3>🧰 Add-ons</h3>
+            <ul>
+              <li>Local dashboard with metrics & routing stats</li>
+              <li>Node alias pre-set (can be changed)</li>
+              <li>Autopilot or manual channel support</li>
+              <li>USB backup key setup for wallet seed</li>
+            </ul>
+          </div>
+          
+          <div class="solution-card ai-ready">
+            <h3>🧠 AI-Ready (Optional)</h3>
+            <ul>
+              <li>Local LLMs (TinyLlama, GPT4All, Phi-3 Mini)</li>
+              <li>Lightning-charged RAG/assistant tools</li>
+              <li>Perfect for knowledge workers, educators & digital monks</li>
+            </ul>
+          </div>
+        </div>
+        
+        <blockquote class="solution-quote">
+          It's not just a Bitcoin node.<br>
+          It's your own truth machine.
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- Why Malaysia Section -->
+    <section class="why-malaysia" id="why-malaysia">
+      <div class="container">
+        <h2>🇲🇾 Why Malaysia Needs This</h2>
+        
+        <div class="malaysia-grid">
+          <div class="malaysia-card">
+            <h3>💵 Ringgit Pricing & Local Fulfillment</h3>
+            <ul>
+              <li>No USD conversion hassle or import tax shocks</li>
+              <li>Pay in <strong>MYR, Bitcoin, or via FPX/DuitNow</strong></li>
+              <li>Delivery from within Malaysia = fast setup</li>
+            </ul>
+          </div>
+          
+          <div class="malaysia-card">
+            <h3>💬 Local Support & Context</h3>
+            <ul>
+              <li>Telegram group in Bahasa, English, and Mandarin</li>
+              <li>Tailored setup guides (e.g., TM Unifi, Yes 5G)</li>
+              <li>Guides for LHDN-safe use and disclosure strategy</li>
+            </ul>
+          </div>
+          
+          <div class="malaysia-card">
+            <h3>🌍 Southeast Asia-Optimized Routing</h3>
+            <ul>
+              <li>Optional regional peering recommendations</li>
+              <li>Participate in <strong>routing income</strong> with sats</li>
+              <li>Experiment with <strong>Lightning paywalls, tips, & plugins</strong></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section class="use-cases">
+      <div class="container">
+        <h2>📚 Educational & Strategic Use Cases</h2>
+        <p class="section-intro">Our nodes aren't just for Bitcoiners — they're for:</p>
+        
+        <div class="use-cases-table">
+          <div class="use-case-row">
+            <div class="use-case-group">Teachers & Schools</div>
+            <div class="use-case-desc">Launch a Bitcoin education lab</div>
+          </div>
+          <div class="use-case-row">
+            <div class="use-case-group">Developers</div>
+            <div class="use-case-desc">Test Lightning APIs locally (LNURL, keysend, webhooks)</div>
+          </div>
+          <div class="use-case-row">
+            <div class="use-case-group">Homelabbers</div>
+            <div class="use-case-desc">Integrate into your existing server rack</div>
+          </div>
+          <div class="use-case-row">
+            <div class="use-case-group">Content Creators</div>
+            <div class="use-case-desc">Accept Lightning tips directly, without custodians</div>
+          </div>
+          <div class="use-case-row">
+            <div class="use-case-group">Agritech/IoT Builders</div>
+            <div class="use-case-desc">Run Bitcoin-native micropayment infrastructure (sensors, etc)</div>
+          </div>
+          <div class="use-case-row">
+            <div class="use-case-group">Sovereign Individuals</div>
+            <div class="use-case-desc">Maintain your own financial uptime</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI Integration Section -->
+    <section class="ai-integration">
+      <div class="container">
+        <h2>🤖 Bonus: AI Meets Bitcoin (Local LLM Integration)</h2>
+        
+        <div class="ai-content">
+          <div class="ai-description">
+            <p>Our advanced node kits are designed to support <strong>offline AI inference</strong>, combining:</p>
+            <ul>
+              <li>🧠 <strong>Small-scale LLMs</strong> (e.g., TinyLlama, Phi-3, GPT4All)</li>
+              <li>📊 Local vector store or document RAGs</li>
+              <li>⚡ Query-charging via Lightning (micropay-per-question)</li>
+            </ul>
+            
+            <p>This creates a local, censorship-resistant <strong>Bitcoin + AI assistant</strong> — ideal for:</p>
+            <ul>
+              <li>Personal knowledge bases</li>
+              <li>Offline business Q&A (RAG)</li>
+              <li>Remote homesteads or cybercafes</li>
+            </ul>
+          </div>
+          
+          <blockquote class="ai-quote">
+            We call this future:<br>
+            <em>A node that talks back.</em>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Configurations Section -->
+    <section class="configurations" id="configurations">
+      <div class="container">
+        <h2>🛠️ Setup Tiers</h2>
+        
+        <div class="tiers-grid">
+          <div class="tier-card">
+            <h3>Seed</h3>
+            <div class="tier-for">For Beginners</div>
+            <div class="tier-price">RM 450</div>
+            <div class="tier-features">
+              <h4>Key Features:</h4>
+              <ul>
+                <li>Bitcoin + Lightning pre-installed (Pi 4 4GB)</li>
+                <li>1TB SSD storage</li>
+                <li>Basic security hardening</li>
+                <li>Setup manual (PDF + video)</li>
+              </ul>
+            </div>
+            <button class="tier-cta">Choose Seed</button>
+          </div>
+          
+          <div class="tier-card featured">
+            <div class="popular-badge">Most Popular</div>
+            <h3>Grow</h3>
+            <div class="tier-for">For Builders & Educators</div>
+            <div class="tier-price">RM 650</div>
+            <div class="tier-features">
+              <h4>Key Features:</h4>
+              <ul>
+                <li>Pi 4 8GB or Jetson Nano</li>
+                <li>2TB SSD storage</li>
+                <li>Add-ons: Electrs, RTL, Watchtower</li>
+                <li>Local guide & Telegram support</li>
+                <li>Mempool explorer included</li>
+              </ul>
+            </div>
+            <button class="tier-cta">Choose Grow</button>
+          </div>
+          
+          <div class="tier-card">
+            <h3>Sovereign</h3>
+            <div class="tier-for">For Pros & Homelabbers</div>
+            <div class="tier-price">RM 850</div>
+            <div class="tier-features">
+              <h4>Key Features:</h4>
+              <ul>
+                <li>Jetson Nano (4GB) - AI ready</li>
+                <li>4TB SSD storage</li>
+                <li>Full Lightning dashboard + local LLM ready stack</li>
+                <li>BTCPay Server + LNBits</li>
+                <li>Priority support & consultation</li>
+              </ul>
+            </div>
+            <button class="tier-cta">Choose Sovereign</button>
+          </div>
+        </div>
+        
+        <div class="all-tiers-include">
+          <h3>All tiers come with:</h3>
+          <ul>
+            <li>Setup manual (PDF + video)</li>
+            <li>Telegram support access</li>
+            <li>Free software updates via SD card download</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Launch Offer Section -->
+    <section class="launch-offer">
+      <div class="container">
+        <h2>🎁 Launch Offer (Limited to First 50 Units)</h2>
+        
+        <div class="offer-grid">
+          <div class="offer-item">
+            <div class="offer-icon">🔟</div>
+            <div class="offer-text"><strong>10% off</strong> if paid in Bitcoin</div>
+          </div>
+          <div class="offer-item">
+            <div class="offer-icon">🚚</div>
+            <div class="offer-text">Free shipping in Malaysia</div>
+          </div>
+          <div class="offer-item">
+            <div class="offer-icon">🎓</div>
+            <div class="offer-text">Bonus: 1-month private Telegram walkthrough sessions</div>
+          </div>
+        </div>
+        
+        <div class="offer-cta">
+          <a href="#contact" class="cta-primary large">Claim Yours Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Community Section -->
+    <section class="community">
+      <div class="container">
+        <h2>💬 Ask, Hack, Learn With Us</h2>
+        
+        <p>Join our <a href="https://t.me/kheAIcom">Telegram group</a> and meet fellow:</p>
+        
+        <div class="community-grid">
+          <div class="community-item">Lightning node runners</div>
+          <div class="community-item">Raspberry Pi tinkerers</div>
+          <div class="community-item">AI-sovereign thinkers</div>
+          <div class="community-item">Minimalist homelabbers</div>
+        </div>
+        
+        <blockquote class="community-quote">
+          We believe Bitcoin should be:<br>
+          <strong>Self-run, not self-defeating.<br>
+          Offline-ready, not cloud-chained.<br>
+          And ultimately, yours.</strong>
+        </blockquote>
+        
+        <p class="community-welcome">
+          Welcome to the quiet layer beneath the hype.<br>
+          Welcome to <strong>kheAI nodes</strong>.
+        </p>
+      </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="final-cta" id="contact">
+      <div class="container">
+        <h2>💬 Final Words: It's Time To Upgrade</h2>
+        
+        <div class="upgrade-check">
+          <p>If your Bitcoin sits on an exchange,<br>
+          If your wallet connects to someone else's node,<br>
+          If your Lightning wallet is custodial...</p>
+          
+          <p><strong>You're only halfway there.</strong></p>
+        </div>
+        
+        <blockquote class="final-quote">
+          The real Bitcoin experience is <strong>sovereign, slow, and simple.
+          One node at a time — we're rebuilding the edge of the network.
+        </blockquote>
+
+        <div class="final-message">
+          <p>Don't be a passive holder.<br>
+          Be a <strong>sovereign runner</strong>.</p>
+        </div>
+        
+        <div class="contact-methods">
+          <h3>Ready to Start Your Bitcoin Journey?</h3>
+          <div class="contact-grid">
+            <div class="contact-item">
+              <strong>Telegram:</strong> <a href="https://t.me/kheAIcom">@kheAIcom</a>
+            </div>
+            <div class="contact-item">
+              <strong>Email:</strong> <a href="mailto:kai@kheai.com">kai@kheai.com</a>
+            </div>
+            <div class="contact-item">
+              <strong>Website:</strong> <a href="https://kheai.com">kheai.com</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="payment-methods">
+          <h3>Payment Methods:</h3>
+          <div class="payment-grid">
+            <div class="payment-item bitcoin">
+              <strong>Bitcoin</strong> (on-chain or Lightning) - <span class="discount">10% discount</span>
+            </div>
+            <div class="payment-item">
+              <strong>FPX/DuitNow</strong> (Malaysian banks)
+            </div>
+            <div class="payment-item">
+              <strong>Cash on delivery</strong> (Klang Valley only)
+            </div>
+          </div>
+        </div>
+        
+        <div class="brand-tagline">
+          <p><strong>Built in Malaysia. Paid in sats. Powered by you.</strong></p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>
+
+<style>
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  /* Hero Section */
+  .hero {
+    background: #f7931a;
+    color: white;
+    padding: 3rem 0;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-quote {
+    font-style: italic;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+  }
+
+  .hero-cta {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+
+  .cta-primary, .cta-secondary {
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .cta-primary {
+    background: white;
+    color: #f7931a;
+  }
+
+  .cta-secondary {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+  }
+
+  /* Sections */
+  section {
+    padding: 2rem 0;
+  }
+
+  section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  /* Grids */
+  .problem-grid,
+  .solution-grid,
+  .malaysia-grid,
+  .tiers-grid {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .solution-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .tiers-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+
+  /* Cards - Dark mode compatible */
+  .problem-card,
+  .solution-card,
+  .tier-card {
+    padding: 1.5rem;
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    background: var(--color-fill);
+    color: var(--color-text);
+  }
+
+  .malaysia-card {
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    color: white;
+  }
+
+  .tier-card {
+    text-align: center;
+    position: relative;
+  }
+
+  .tier-card.featured {
+    border-color: #f7931a;
+    border-width: 2px;
+  }
+
+  .popular-badge {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #f7931a;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.8rem;
+  }
+
+  .tier-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f7931a;
+    margin: 1rem 0;
+  }
+
+  .tier-cta {
+    background: #f7931a;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  /* Special sections */
+  .why-malaysia {
+    background: #dc143c;
+    color: white;
+  }
+
+  .ai-integration {
+    background: #667eea;
+    color: white;
+  }
+
+  .launch-offer {
+    background: #27ae60;
+    color: white;
+  }
+
+  .final-cta {
+    background: #2c3e50;
+    color: white;
+  }
+
+  /* Use cases table - Dark mode compatible */
+  .use-case-row {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 1rem;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    background: var(--color-fill);
+    border-radius: 4px;
+    border: 1px solid var(--color-border);
+  }
+
+  .use-case-group {
+    font-weight: bold;
+    color: #3498db;
+  }
+
+  .use-case-desc {
+    color: var(--color-text);
+  }
+
+  /* Offer grid */
+  .offer-grid {
+    display: grid;
+    gap: 1rem;
+    margin: 1.5rem 0;
+  }
+
+  .offer-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+  }
+
+  /* Community - Dark mode compatible */
+  .community {
+    background: var(--color-fill);
+  }
+
+  .community-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+  }
+
+  .community-item {
+    padding: 1rem;
+    background: var(--color-card-muted);
+    border-radius: 4px;
+    text-align: center;
+    border-left: 3px solid #f7931a;
+    color: var(--color-text);
+  }
+
+  .community-quote {
+    font-style: italic;
+    text-align: center;
+    margin: 2rem 0;
+    padding: 1rem;
+    background: var(--color-card-muted);
+    border-radius: 4px;
+    color: var(--color-text);
+  }
+
+  /* All tiers include - Dark mode compatible */
+  .all-tiers-include {
+    margin-top: 2rem;
+    text-align: center;
+    padding: 1.5rem;
+    background: var(--color-fill);
+    border-radius: 4px;
+    border: 1px solid var(--color-border);
+    color: var(--color-text);
+  }
+
+  /* Contact */
+  .contact-grid,
+  .payment-grid {
+    display: grid;
+    gap: 1rem;
+    margin: 1.5rem 0;
+  }
+
+  .contact-item,
+  .payment-item {
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    text-align: center;
+  }
+
+  .payment-item.bitcoin {
+    border: 2px solid #f7931a;
+  }
+
+  /* Typography */
+  .discount {
+    color: #f7931a;
+    font-weight: bold;
+  }
+
+  .section-intro {
+    color: var(--color-text-muted);
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .problem-note {
+    color: #e74c3c;
+    font-style: italic;
+    margin-top: 1rem;
+  }
+
+  .solution-hint {
+    color: #27ae60;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+
+  .tier-for {
+    color: var(--color-text-muted);
+    margin-bottom: 1rem;
+  }
+
+  .community-welcome {
+    color: var(--color-text);
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .brand-tagline {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+  }
+
+  code {
+    background: var(--color-code-bg);
+    color: var(--color-text);
+    padding: 0.2rem 0.4rem;
+    border-radius: 2px;
+    font-family: monospace;
+  }
+
+  blockquote {
+    font-style: italic;
+    text-align: center;
+    margin: 2rem 0;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+  }
+
+  .solution-quote {
+    font-style: italic;
+    text-align: center;
+    margin: 2rem 0;
+    padding: 1rem;
+    background: #667eea;
+    color: white;
+    border-radius: 4px;
+  }
+
+  .ai-quote {
+    font-style: italic;
+    text-align: center;
+    margin: 2rem 0;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+  }
+
+  .final-quote {
+    font-style: italic;
+    text-align: center;
+    margin: 2rem 0;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+  }
+
+  /* AI content layout */
+  .ai-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    align-items: start;
+  }
+
+  /* Links */
+  a {
+    color: #f7931a;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  /* White text links in colored sections */
+  .why-malaysia a,
+  .ai-integration a,
+  .launch-offer a,
+  .final-cta a {
+    color: white;
+  }
+
+  .why-malaysia a:hover,
+  .ai-integration a:hover,
+  .launch-offer a:hover,
+  .final-cta a:hover {
+    color: #f7931a;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+    
+    .hero-cta {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .cta-primary,
+    .cta-secondary {
+      width: 100%;
+      max-width: 250px;
+    }
+    
+    .use-case-row {
+      grid-template-columns: 1fr;
+    }
+    
+    .tiers-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .tier-card.featured {
+      border-width: 1px;
+    }
+    
+    .ai-content {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+    
+    .community-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* Dark mode specific overrides */
+  @media (prefers-color-scheme: dark) {
+    .problem-card,
+    .solution-card,
+    .tier-card,
+    .all-tiers-include {
+      background: var(--color-card);
+      border-color: var(--color-border);
+    }
+    
+    .community-item {
+      background: var(--color-card);
+    }
+    
+    .community-quote {
+      background: var(--color-card);
+    }
+    
+    .use-case-row {
+      background: var(--color-card);
+      border-color: var(--color-border);
+    }
+    
+    code {
+      background: var(--color-card);
+    }
+  }
+</style>
