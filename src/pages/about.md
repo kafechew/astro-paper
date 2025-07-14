@@ -3,96 +3,59 @@ layout: ../layouts/AboutLayout.astro
 title: "About kheAI"
 ---
 
-> I’m not rejecting the world — I just refuse to let it decide how I live.
 
-**kheAI** stands for _Kindle Harnessing Emptiness, Awaken Intelligence_.
+> _I’m not rejecting the world — I just refuse to let it decide how I live._
 
-It’s a quiet signal in a noisy system —  
-A digital hermitage built on Bitcoin and clarity.
+**kheAI** is a Minimal Path to Freedom. A return to what matters: a *Healthy Body*, an *Enlightened Mind*, and a *Sovereign Life*.
 
----
-
-## 🌱 What is kheAI?
-
-**kheAI** is a minimalist path to freedom —  
-for sovereign builders, digital hermits, and quiet entrepreneurs.
-
-We offer sats-based systems and slow finance tools:  
-to hold what matters, automate the rest, and reclaim time.
+Rooted in the [**21 Principles of Daily Liberation**](/posts/21-principles-of-daily-liberation), kheAI invites you to live minimally but meaningfully — from **Stillness through Motion** to **Sovereignty without Clinging**.
 
 ---
 
-## ⚙️ What kheAI Does
+## What is kheAI?
 
-### 🟡 1. Bitcoin Treasury
+kheAI is a philosophy-powered space for building your own rhythm of freedom — one aligned with nature, technology, and timeless inner truth.
 
-- Accumulate BTC as long-term business reserves  
-- Strategically DCA and self-custody via cold wallets  
-- Leverage BTC for collateralized liquidity (where allowed)  
-- Align with antifragile treasury principles for Southeast Asia
-
-> Don’t sell. Delay. Stack quietly.
-
----
-
-### ⚡ 2. Lightning Services
-
-**kheAI acts as a Lightning Service Provider (LSP):**
-
-- [**Node-in-a-box**](/nodes-in-a-box): Raspberry Pi & Jetson Nano hardware preloaded with Bitcoin + Lightning (or Local LLM) 
-- Help creators and businesses accept LN payments  
-- Set up non-custodial wallets and paywalls  
-- Offer liquidity-as-a-service: rebalancing, leasing, etc.  
-- Enable decentralized payments for content, SaaS, and services
-
-> Bitcoin is savings. Lightning is income.
+- 🌱 **Body:** Respect health, embrace hormesis, break the loop of busyness.
+- 🧘 **Mind:** Dissolve identity, drop the mask, return to presence.
+- 💸 **Finance:** Redefine wealth, exit noise, embrace sovereign assets like [Bitcoin](/tags/bitcoin/).
+- 💀 **Death:** Live as if time were borrowed — because it is.
+- 🤝 **Relationships:** Overflow from wholeness, not obligation.
+- 🏙️ **Practice:** Be a hermit in the city — grounded, awake, unbound.
 
 ---
 
-### 💧 3. Sovereign Liquidity Strategy
+## Why "kheAI"?
 
-- Delay cash outflows with balance transfers and float  
-- Park idle funds in high-yield accounts 
-- Map financial runway and business burn rate  
-- Use crypto as strategic working capital, not risk
+The name **kheAI** combines:
 
-> Borrow time, not stress. Delay the sell.  
-> Buy back your time.
+- **khe** — from the Sanskrit/Khmer root for “emptiness” or “sky” (虛空), echoing *freedom, spaciousness, and clarity*.
+- **AI** — not just Artificial Intelligence, but *Awareness Integrated*.
 
----
-
-### 🧘 4. Sovereign Philosophy & Tools
-
-**kheAI is built on principles of:**
-
-- CoastFIRE & antifragility  
-- Minimalist wealth planning  
-- Opting out, without fleeing the system
-
-We share:
-
-- [Open dashboards, trackers, and node reports](/dashboard)  
-- Bitcoin/Lightning education, i.e. [content](/posts) & [quiz](/quiz), for quiet operators  
-- Systems to live freer, not louder
+> _From illusion to clarity. From reaction to stillness._
 
 ---
 
-## 🧭 Who kheAI is For
+## What kheAI is not:
 
-- Micro-entrepreneurs stacking sats with purpose  
-- Digital monks seeking clarity over noise  
-- Creators tired of middlemen  
-- Small businesses managing capital like a sovereign
+- ❌ Not another productivity cult  
+- ❌ Not a spiritual bypass  
+- ❌ Not a hustle tool to "get ahead"  
+
+kheAI is for those walking away from noise, but still rooted in this world — minimalists, creatives, monks-in-the-city, quiet builders.
 
 ---
 
-## 🔑 Final Words
+## How to Begin
 
-This isn’t a platform.  
-It’s a path.
+Start with one principle. Live it. Let it ripple.
 
-It’s **kheAI** — a sats-first, quietly optimized node  
-routing Bitcoin, writing in peace,  
-and helping others hold their own keys.
+Or visit [21 Principles](/posts/21-principles-of-daily-liberation) to explore the full path — not as a checklist, but as a mirror.
 
-> 见路不走 — *See the road. Walk your own.*
+---
+
+## Built by Kai
+
+I'm Kai — developer, thinker, and quiet monk of the modern age. I built kheAI as a place where philosophy, Bitcoin, and AI converge to serve one goal: **freedom without fleeing**.
+
+kheAI is not a product. It's a path. Walk yours.

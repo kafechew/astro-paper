@@ -2,7 +2,7 @@ export const SITE = {
   website: "https://kheai.com/", 
   author: "Kai",
   profile: "https://www.linkedin.com/in/kheai",
-  desc: "Minimal Path to Freedom. Tools for sovereign living, from Bitcoin treasury & Lightning infrastructure to AI systems for digital independence. Publicly built.",
+  desc: "Minimal Path to Freedom. Timeless wisdom + modern tools (AI & Bitcoin) to reclaim health, clarity & autonomy.",
   title: "kheAI",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
