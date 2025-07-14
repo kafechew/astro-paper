@@ -2,7 +2,7 @@
 author: Kai
 pubDatetime: 2025-07-04T20:00:00+08:00
 title: Heart Sutra Living Beyond the Self
-featured: true
+featured: false
 draft: false
 slug: heart-sutra-living-beyond-the-self
 tags:

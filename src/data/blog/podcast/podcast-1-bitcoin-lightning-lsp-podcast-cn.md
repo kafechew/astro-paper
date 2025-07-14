@@ -1,6 +1,6 @@
 ---
 title: 比特幣、閃電網路與流動性服務供應商（Podcast 中文版）
-slug: podcast-2-bitcoin-lightning-lsp-podcast-cn
+slug: podcast-1-bitcoin-lightning-lsp-podcast-cn
 pubDatetime: 2025-06-20T21:30:00+08:00
 author: Kai
 featured: false
@@ -12,10 +12,10 @@ tags:
   - podcast
   - finance
   - 中文
-description: 中文播客第二集：探索比特幣的誕生、閃電網路的原理，以及如何成為流動性服務供應商（LSP）來建立自己的比特幣財務系統。
+description: 中文播客第一集：探索比特幣的誕生、閃電網路的原理，以及如何成為流動性服務供應商（LSP）來建立自己的比特幣財務系統。
 ---
 
-## 🎙️ 中文播客第二集：比特幣、閃電網路與流動性服務供應商
+## 🎙️ 中文播客第一集：比特幣、閃電網路與流動性服務供應商
 
 > 本集內容：從阿根廷的惡性通膨故事開始，講述比特幣為什麼能作為「硬貨幣」存在，進而介紹閃電網路的工作原理、付款流程與流動性問題，最後以成為 LSP 賺取比特幣為目標，分享實戰心得與經驗。
 

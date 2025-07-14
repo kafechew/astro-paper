@@ -1,9 +1,9 @@
 ---
-title: Podcast 2 — Bitcoin, Lightning & Liquidity Service Providers
-slug: podcast-2-bitcoin-lightning-liquidity-service-providers
+title: Podcast 1 — Bitcoin, Lightning & Liquidity Service Providers
+slug: podcast-1-bitcoin-lightning-liquidity-service-providers
 pubDatetime: 2025-06-20T19:00:00+08:00
 author: Kai
-featured: true
+featured: false
 draft: false
 tags:
   - bitcoin
@@ -12,10 +12,10 @@ tags:
   - podcast
   - finance
   - english
-description: English Podcast No.2 featuring a story-driven exploration of money, inflation, and Bitcoin-powered freedom.
+description: English Podcast featuring a story-driven exploration of money, inflation, and Bitcoin-powered freedom.
 ---
 
-## 🎧 English Podcast No.2
+## 🎧 English Podcast No.1
 
 > In this episode, I discuss my personal journey through inflation, Bitcoin, Lightning, and building a sovereign financial system as a Liquidity Service Provider (LSP).
 
