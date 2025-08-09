@@ -12,6 +12,7 @@ tags:
   - malaysia
   - telegram
   - fintech
+  - announcement
 description: How a stack of receipts, late-night messages, and a stubborn idea turned into a Telegram-based AI accountant for Malaysian microbusinesses.
 ---
 
