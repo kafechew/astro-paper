@@ -2,7 +2,7 @@ export const SITE = {
   website: "https://kheai.com/", 
   author: "Kai",
   profile: "https://www.linkedin.com/in/kheai",
-  desc: "kheAI is a chat-based AI Accounting for Smarter Liquidity & Bitcoin Treasury. We help Malaysian microbusinesses track income, control expenses, manage cashflow and more — effortlessly in Telegram.",
+  desc: "kheAI is a minimalist framework for living freely through balance of Body, Mind, and ₿itcoin.",
   title: "kheAI",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
