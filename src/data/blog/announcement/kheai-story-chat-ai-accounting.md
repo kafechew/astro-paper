@@ -100,7 +100,7 @@ If you can send a message, you can do your books.
 
 1. Open Telegram  
 2. Search for [**@kheAIbot**](https://t.me/kheAIbot)  
-3. Send: `Sales RM500` ot `Bitcoin price now?` 
+3. Send: `Sales RM500` or `Bitcoin price now?` 
 4. Watch the magic happen.
 
 ---
