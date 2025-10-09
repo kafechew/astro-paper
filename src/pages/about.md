@@ -3,7 +3,7 @@ layout: ../layouts/AboutLayout.astro
 title: "About kheAI"
 ---
 
-# kheAI: Body, Mind & ₿itcoin  
+# Body, Mind & ₿itcoin  
 
 > Today, as always, men fall into two categories: slaves and free men.  
 > He who does not own two-thirds of his day is a slave — no matter what he calls himself: a politician, a businessman, a scholar, or a civil servant. 
