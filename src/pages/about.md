@@ -5,11 +5,11 @@ title: "About kheAI"
 
 # kheAI: Body, Mind & ₿itcoin  
 
-> “Today, as always, men fall into two categories: slaves and free men.  
-> He who does not own two-thirds of his day is a slave — no matter what he calls himself: a politician, a businessman, a scholar, or a civil servant.”  
+> Today, as always, men fall into two categories: slaves and free men.  
+> He who does not own two-thirds of his day is a slave — no matter what he calls himself: a politician, a businessman, a scholar, or a civil servant. 
 > — *Friedrich Nietzsche*  
 
-> “I’m not rejecting the world — I just refuse to let it decide how I live.”  
+> I’m not rejecting the world — I just refuse to let it decide how I live. 
 
 ---
 
