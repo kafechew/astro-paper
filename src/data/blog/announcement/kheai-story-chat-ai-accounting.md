@@ -2,7 +2,7 @@
 author: Kai
 pubDatetime: 2025-08-08T11:00:00+08:00
 title: From Messy Notes to Conversational AI Accounting — The Story Behind kheAI
-featured: true
+featured: false
 draft: false
 slug: kheai-story-chat-ai-accounting
 tags:
