@@ -2,7 +2,7 @@ export const SITE = {
   website: "https://kheai.com/", 
   author: "Kai",
   profile: "https://www.linkedin.com/in/kheai",
-  desc: "kheAI is a minimalist framework for living freely through balance of Body, Mind, and ₿itcoin.",
+  desc: "kheAI is a decentralized oracle that verifies medicinal purity using Edge AI and immutable data streams.",
   title: "kheAI",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
