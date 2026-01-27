@@ -1,72 +1,112 @@
 ---
 layout: ../layouts/AboutLayout.astro
 title: "About kheAI"
+description: "A decentralized oracle for botanical data integrity — from biological truth to digital trust."
 ---
 
-# Body, Mind & ₿itcoin  
+## kheAI exists to make **biological truth verifiable**
 
-> Today, as always, men fall into two categories: slaves and free men.  
-> He who does not own two-thirds of his day is a slave — no matter what he calls himself: a politician, a businessman, a scholar, or a civil servant. 
-> — *Friedrich Nietzsche*  
+kheAI is building a **decentralized oracle for botanical data integrity**.
 
-> I’m not rejecting the world — I just refuse to let it decide how I live. 
+We operate at the intersection of **biology, cryptography, and intelligence** to solve a fundamental problem in human health:
 
----
+> Most medicinal products require trust — yet provide no audit trail.
 
-## 🧩 The Problem  
-Modern slavery doesn’t wear chains.  
-It hides behind **debt, distraction,** and **dependence.**  
+In today’s global supply chain, “organic” is often just a label. Provenance is opaque. Toxicity risks are hidden. Consumers are forced to rely on marketing claims instead of verifiable data.
 
-We trade our time for comfort, our attention for noise, and our freedom for convenience — all while believing we’re in control.  
+kheAI replaces that **black box of consumption** with an immutable, real-time **Truth-Stream** — ensuring that what enters the human body is demonstrably pure.
 
 ---
 
-## 🎯 The Goal  
-**True Freedom** — to live well without selling your time.  
-To create, move, and think freely — on your own terms.  
+## The problem we are solving
+
+Modern medicinal and botanical supply chains suffer from **information asymmetry**.
+
+### 1. No verifiable origin  
+Consumers cannot independently verify *where* or *how* medicinal plants are grown. Certifications are centralized, slow, and vulnerable to corruption.
+
+### 2. Hidden toxicity risks  
+Many medicinal plants are hyper-accumulators. Soil-based farming concentrates heavy metals, pesticides, and microplastics directly into plant tissue — especially in mass-imported herbs.
+
+### 3. Adulteration at scale  
+Economically motivated substitution (e.g. toxic look-alikes) is common and often undetectable to the end user, creating real health risks.
+
+The result: **uncertainty becomes the default state of consumption**.
 
 ---
 
-## 🛤️ The Path  
-**kheAI** is the *Minimal Path to Freedom* — for seekers who choose to live sovereignly, think clearly, and die free, without escaping the modern world.  
+## The kheAI approach: Biology → Protocol → Intelligence
 
-Built upon the [**21 Principles of Daily Liberation**](/posts/21-principles-of-daily-liberation), kheAI blends **ancient wisdom** with **modern tools** — *AI* for clarity, *Bitcoin* for sovereignty, and *discipline* for peace.  
+kheAI is not a product. It is **infrastructure**.
 
-No fluff. No noise.  
-Just the essentials for a life lived awake.  
+### Biological Layer — Eliminating risk at the source  
+We grow medicinal botanicals in **controlled, soil-less aquaponic systems**.  
+This physically removes the primary vectors of contamination and enables urban, regenerative production.
 
----
+### Protocol Layer — Making data immutable  
+All environmental and purity-related sensor data is **cryptographically signed and broadcast via the Nostr protocol**.
 
-## 🌿 The Framework  
+There is no central database to edit.  
+No marketing department can rewrite history.
 
-- 🌱 **Healthy Body** — Protect your health. Embrace discomfort (*hormesis*). Live simply and sustainably.  
-- 🧘 **Enlightened Mind** — Remove clutter. Cultivate focus. Practice intentional awareness.  
-- 💸 **Sovereign Treasury** — Stack Bitcoin. Borrow fiat, never sell sats. Secure multisig. CoastFIRE your path to sovereignty.  
+Each harvest receives a **digital birth certificate** backed by an immutable data stream.
 
----
+### Intelligence Layer — Making truth legible  
+Raw sensor data is useless without interpretation.
 
-## 🔁 The Practice of kheAI  
+Using **Edge-AI** and **searchable AI agents**, kheAI translates complex biological signals into clear, auditable answers:
 
-- 🏊 **1 Exercise** — Keep your body strong and adaptable. *(e.g. Swim daily)*  
-- 💻 **1 Project** — Build or create something that matters. *(e.g. kheAI.com + daily Body, Mind & ₿itcoin tweet)*  
-- 🧘 **1 Practice** — Maintain mental clarity through *meditation, journaling,* or *reflection.*  
-- 📚 **1 Learning** — Always study or explore something new to stay intellectually alive. *(e.g. Bitcoin)*  
+> *Is this batch verifiably lead-free?*  
+> *Was this plant grown without soil exposure?*  
+> *Can this species be cryptographically proven authentic?*
 
----
-
-## ✨ In Essence  
-
-**kheAI** is not an escape — it’s a return.  
-A return to sovereignty over your time, your thoughts, and your value.  
-
-A guide for living simply, thinking deeply, and stacking wisely.  
-
-> **Live awake. Die free.**
-
+Transparency is not a PDF. It is a queryable system.
 
 ---
 
-## Built by Kai
+## Why decentralization matters
 
-I'm Kai — developer, thinker, and quiet monk of the modern age.  
-I built kheAI where **philosophy, Bitcoin, and AI converge** — to help individuals gain freedom without fleeing, and independence without isolation.
+Centralized trust systems fail silently.
+
+By broadcasting data to a decentralized relay network, kheAI ensures that **truth cannot be administratively revised**. Once biological reality is recorded, it exists independently of the producer.
+
+This aligns incentives across consumers, growers, regulators, and researchers — without requiring blind trust in any single institution.
+
+---
+
+## Beyond purity: Mind sovereignty
+
+Uncertainty is a cognitive tax.
+
+When food, water, and medicine cannot be trusted, the human nervous system remains locked in defensive mode. Creativity, long-term thinking, and agency degrade.
+
+kheAI exists to restore **Mind Sovereignty** — the condition where individuals no longer expend cognitive energy questioning the safety of what sustains them.
+
+When biological truth is verifiable, attention is freed to focus on building the future rather than defending against the past.
+
+---
+
+## Our long-term vision
+
+We envision cities where:
+
+- Buildings are **regenerative bio-infrastructure**
+- Medicinal production is **local, verifiable, and low-carbon**
+- Biological data is **publicly auditable but individually sovereign**
+- Trust is derived from **cryptography and physics**, not authority
+
+kheAI is an early step toward that future.
+
+---
+
+## kheAI is for those who believe:
+
+- Health should be **verifiable**, not branded  
+- Trust should be **earned mathematically**, not requested  
+- Technology should reduce uncertainty, not obscure it  
+
+If that resonates, you are already part of the signal.
+
+---
+
+*Truth does not need persuasion — only bandwidth.*
