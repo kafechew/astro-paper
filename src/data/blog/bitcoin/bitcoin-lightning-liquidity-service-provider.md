@@ -3,7 +3,7 @@ title: Bitcoin, Lightning & Liquidity Service Providers
 author: Kai
 pubDatetime: 2025-06-19T08:00:00+08:00
 slug: bitcoin-lightning-liquidity-service-provider
-featured: true
+featured: false
 draft: false
 tags:
   - bitcoin
