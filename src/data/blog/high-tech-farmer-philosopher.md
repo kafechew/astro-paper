@@ -2,7 +2,7 @@
 author: Kai
 pubDatetime: 2026-01-26T20:00:00+08:00
 title: The High-Tech Farmer-Philosopher
-featured: true
+featured: false
 draft: false
 slug: high-tech-farmer-philosopher
 tags:
