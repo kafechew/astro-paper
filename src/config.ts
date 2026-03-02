@@ -2,7 +2,7 @@ export const SITE = {
   website: "https://kheai.com/", 
   author: "Kai",
   profile: "https://www.linkedin.com/in/kheai",
-  desc: "kheAI is a decentralized oracle that verifies medicinal purity using Edge AI and immutable data streams.",
+  desc: "kheAI provides AI Agentic consulting and deployment services for teams that want the power of autonomous agents — without taking catastrophic security, supply-chain, or compliance risk.",
   title: "kheAI",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
