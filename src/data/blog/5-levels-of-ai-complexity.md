@@ -84,18 +84,3 @@ By understanding where a tool sits on this hierarchy, you can stop fighting with
     scrolling="yes">
   </iframe>
 </div>
-
-<div id="nostr-embed"></div>
-
-<script>
-  !(function () {
-    const n=document.createElement('script');n.type='text/javascript';n.async=!0;n.src='https://cdn.jsdelivr.net/gh/nostrband/nostr-embed@latest/dist/nostr-embed.js';
-    n.onload=function () {
-      nostrEmbed.init(
-        '8c258de1b6ff7013dc677788e16a63e1b1b1c4558cfc583faa2c84f44599626e', // This is your note's Hex ID
-        '#nostr-embed',
-        'wss://nostr.bitcoiner.social/' // Using Primal Relay here
-      );
-    };const a=document.getElementsByTagName('script')[0];a.parentNode.insertBefore(n, a);
-  })();
-</script>
