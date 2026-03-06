@@ -39,21 +39,24 @@ We will use Google’s **Gemini 2.5 Flash**. It is extremely fast and generous f
 2. Click **Create API Key**.
 3. **Copy the key** and paste it into your temporary text document. Label it `GOOGLE_API_KEY`.
 
-> **Note on Limits:** Gemini 2.5 Flash Lite gives you 1,000 requests per day for free. This is more than enough for personal use.
-
-**Tips**
+**Note on Limits:** 
 
 - Check the latest [models](https://ai.google.dev/gemini-api/docs/models)
 - View your [analytics](https://aistudio.google.com/rate-limit?timeRange=last-hour )
 - Default "ping" (every second) cronjob will not affect your Gemini API limit issue
 
-| Model Variant           | RPM (Requests Per Minute) | TPM (Tokens Per Minute) | RPD (Requests Per Day) | Best Use Case        |
-| :---------------------- | :------------------------ | :---------------------- | :--------------------- | :------------------- |
-| `gemini-2.5-pro`        | 2 \- 5                    | 250,000                 | 50 \- 100              | Complex Refactoring  |
-| `gemini-2.5-flash`      | 10                        | 250,000                 | 250                    | Telegram Summaries   |
-| `gemini-2.5-flash-lite` | 15                        | 250,000                 | 1,000                  | Chat UI Interactions |
+**Free Tier Limits (Approximate as of early 2026)**
 
+Limits are at the project level, sharing capacity across all API keys within a project: 
 
+| Model Variant           | RPM (Requests Per Minute) | RPD (Requests Per Day) | Best Use Case                                 |
+| :---------------------- | :------------------------ | :--------------------- | :-------------------------------------------- |
+| `gemini-2.5-pro`        | 2 - 5                     | 50 - 100               | complex reasoning (low volume) |
+| `gemini-2.5-flash`      | 10 - 15                   | 250 - 500              |                                  |
+| `gemini-2.5-flash-lite` | 15                        | ~1000                  | simple tasks (high volume) |
+
+- All three models share the same 250,000 tokens per minute (TPM) limit and access to the 1 million token context window. 
+- Data Privacy: Data submitted via the free tier may be used by Google to train and improve models.
 
 **B) GitHub "Classic" Token (For Terminal Login)**
 
@@ -336,15 +339,17 @@ If the bot successfully thinks about it, dispatches a job, and comes back saying
 
 If you noted an issue where the background agent crashes with `Error: No API key found for google.`
 
-Because we strive for accuracy, let's fix this *before* it breaks. The system accidentally passed the key as `GOOGLE_API_KEY`, but the worker expects it to be called `GEMINI_API_KEY`.
+**The Root Cause**: The `pi-coding-agent` container is crashing because it isn't receiving the correct API key for the Google provider. 
+
+Your container is most likely receiving `GOOGLE_API_KEY`. However, the `pi-coding-agent` (which relies on standard Google AI SDKs) almost certainly expects the environment variable to be named `GEMINI_API_KEY` when running the `gemini-2.5-flash` model.
 
 While still in the `keaibot` folder in your terminal, run this command:
 
 ```
-npx thepopebot set-agent-llm-secret GEMINI_API_KEY
+npx thepopebot set-agent-llm-secret GEMINI_API_KEY <YOUR_API_KEY> 
 ```
 
-When it prompts you, paste your `GOOGLE_API_KEY` again. This permanently solves the crash issue.
+When it prompts you, paste your `GEMINI_API_KEY`, which is also the `GOOGLE_API_KEY` again. This permanently solves the crash issue.
 
 
 
