@@ -39,24 +39,11 @@ We will use Google’s **Gemini 2.5 Flash**. It is extremely fast and generous f
 2. Click **Create API Key**.
 3. **Copy the key** and paste it into your temporary text document. Label it `GOOGLE_API_KEY`.
 
-**Note on Limits:** 
+**Note:** 
 
 - Check the latest [models](https://ai.google.dev/gemini-api/docs/models)
-- View your [analytics](https://aistudio.google.com/rate-limit?timeRange=last-hour )
+- View your [api rate limits](https://aistudio.google.com/rate-limit?timeRange=last-1-day)
 - Default "ping" (every second) cronjob will not affect your Gemini API limit issue
-
-**Free Tier Limits (Approximate as of early 2026)**
-
-Limits are at the project level, sharing capacity across all API keys within a project: 
-
-| Model Variant           | RPM (Requests Per Minute) | RPD (Requests Per Day) | Best Use Case                                 |
-| :---------------------- | :------------------------ | :--------------------- | :-------------------------------------------- |
-| `gemini-2.5-pro`        | 2 - 5                     | 50 - 100               | complex reasoning (low volume) |
-| `gemini-2.5-flash`      | 10 - 15                   | 250 - 500              |                                  |
-| `gemini-2.5-flash-lite` | 15                        | ~1000                  | simple tasks (high volume) |
-
-- All three models share the same 250,000 tokens per minute (TPM) limit and access to the 1 million token context window. 
-- Data Privacy: Data submitted via the free tier may be used by Google to train and improve models.
 
 **B) GitHub "Classic" Token (For Terminal Login)**
 
