@@ -39,11 +39,6 @@ We will use Google’s **Gemini 2.5 Flash**. It is extremely fast and generous f
 2. Click **Create API Key**.
 3. **Copy the key** and paste it into your temporary text document. Label it `GOOGLE_API_KEY`.
 
-**Note:** 
-
-- Check the latest [models](https://ai.google.dev/gemini-api/docs/models)
-- View your [api rate limits](https://aistudio.google.com/rate-limit?timeRange=last-1-day)
-- Default "ping" (every second) cronjob will not affect your Gemini API limit issue
 
 **B) GitHub "Classic" Token (For Terminal Login)**
 
