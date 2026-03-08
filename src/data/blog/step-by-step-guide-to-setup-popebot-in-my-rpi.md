@@ -311,7 +311,10 @@ Once it says `Ready`, go to your computer or phone browser and paste your Ngrok 
 
 To prove everything is wired up perfectly, type this message into your bot's web chat UI:
 
-`Create a new file named `agent_test.txt` in the `/logs` directory of the repository. The file should contain the text 'Hello from the autonomous agent!'.`
+```
+Create a new file named `agent_test.txt` in the `/logs` directory of the repository. 
+The file should contain the text 'Hello from the autonomous agent!'.
+```
 
 If the bot successfully thinks about it, dispatches a job, and comes back saying it's done, you can go check your `keaibot` repository on GitHub. If that text file is there, congratulations! Your AI agent is fully autonomous and functional.
 
