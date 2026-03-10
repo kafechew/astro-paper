@@ -1,6 +1,6 @@
 ---
 author: Kai
-pubDatetime: 2026-03-13T13:00:00+08:00
+pubDatetime: 2026-03-13T09:00:00+08:00
 title: The Agentic Stack - MCP, CLI & Skill
 featured: false
 draft: false

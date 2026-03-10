@@ -1,6 +1,6 @@
 ---
 author: Kai
-pubDatetime: 2026-03-12T13:00:00+08:00
+pubDatetime: 2026-03-12T09:00:00+08:00
 title: The Vibe Coding Illusion - Why AI Frameworks Don't Replace Deep Tech Knowledge
 featured: false
 draft: false

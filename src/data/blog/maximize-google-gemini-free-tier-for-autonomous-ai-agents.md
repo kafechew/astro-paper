@@ -1,6 +1,6 @@
 ---
 author: Kai
-pubDatetime: 2026-03-11T13:00:00+08:00
+pubDatetime: 2026-03-11T09:00:00+08:00
 title: Maximizing Google Gemini's Free Tier for Autonomous AI Agents
 featured: false
 draft: false
