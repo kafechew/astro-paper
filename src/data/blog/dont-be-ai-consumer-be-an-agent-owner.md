@@ -17,7 +17,7 @@ tags:
 description: Stop being a consumer of AI, and start being an orchestrator of it. We have to learn to build, manage, and deploy our own autonomous agents that work for us, not for a tech conglomerate.
 ---
 
-We are currently witnessing a "Goliath" era of Artificial Intelligence. The massive [Large Language Models (LLMs) are firmly in the hands of the giants—OpenAI, Google, and Anthropic](https://www.kheai.com/posts/intelligence-infrastructure-age). Meanwhile, the [Small Language Model (SLM)](https://www.kheai.com/posts/edge-ai-small-language-models-local-intelligence) space is being carved up by players like Alibaba. For most of us, the infrastructure required to compete at that level involves "crazy" upfront investment that just isn't realistic.
+We are currently witnessing a "Goliath" era of Artificial Intelligence. The massive Large Language Models (LLMs) are firmly in the hands of the giants—OpenAI, Google, and Anthropic. Meanwhile, the [Small Language Model (SLM)](https://www.kheai.com/posts/edge-ai-small-language-models-local-intelligence) space is being carved up by players like Alibaba. For most of us, the [infrastructure](https://www.kheai.com/posts/intelligence-infrastructure-age) required to compete at that level involves "crazy" upfront investment that just isn't realistic.
 
 ![Don't be a AI consumer, be an Agent Owner](https://ik.imagekit.io/moopt/kheai/ai/be-an-agent-owner_yM5Xu_nIA.png)
 
