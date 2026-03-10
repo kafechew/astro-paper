@@ -176,6 +176,16 @@ Because the Pi coding agent performs many small tasks (reading a file, analyzing
 3. **Multimodal Routing:** When I find a UI bug, I just drop a screenshot in the chat. The 3.1 Flash-Lite vision capabilities analyze the image and write a highly specific CSS job ticket for the Agent side to execute later.
 
 
+## 7. Update: Use `gemini-3.1-flash-lite-preview` for both Chat & Agent
+
+By upgrading `thepopebot` from `1.2.72` to `1.2.73-beta.34`, via  
+
+```
+npx thepopebot upgrade @beta
+ ```
+
+Remember to update your `LLM_MODEL` too near `keaibot/settings/variables/actions`!
+
 
 ## The Takeaway
 
