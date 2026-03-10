@@ -10,6 +10,7 @@ tags:
   - agentic
   - rpi
   - popebot
+  - fix
   - english
 description: Setting up an AI agent on a Raspberry Pi has a lot of moving parts. Because it involves networking, permissions, and background workers, it’s easy for one small typo to break the whole system.
 ---
