@@ -131,6 +131,19 @@ const structuredData = {
     <ClientRouter />
 
     <script is:inline src="/toggle-theme.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-G6TG15YRB3"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      // Wrap the config in an event listener to support Astro's ClientRouter
+      document.addEventListener('astro:page-load', () => {
+        gtag('config', 'G-G6TG15YRB3');
+      });
+    </script>
   </head>
 
   <link
