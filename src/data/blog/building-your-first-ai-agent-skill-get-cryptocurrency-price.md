@@ -109,16 +109,23 @@ This file acts as the AI's internal documentation. It reads this to understand i
 ```
 ---
 name: coingecko-price
-description: Fetch the current Bitcoin price in USD from CoinGecko.
+description: Fetch cryptocurrency prices from CoinGecko, supporting custom coin IDs and fiat currencies.
 ---
 
 # CoinGecko Price
+
 This tool fetches current cryptocurrency prices from CoinGecko.
 
 ## Usage
-skills/coingecko-price/get-price.sh
+
+`skills/coingecko-price/get-price.sh [coin_id] [currency]`
+
+## Example
+
+`skills/coingecko-price/get-price.sh bitcoin myr`
 
 ## Prerequisites
+
 - `COINGECKO_API_KEY` must be set in the environment.
 ```
 
