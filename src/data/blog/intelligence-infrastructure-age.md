@@ -27,7 +27,7 @@ We tend to think of AI as an abstract mathematical construct. But physics tells 
 
 I’ve been looking into **Landauer’s Principle**, which establishes the minimum energy required to erase a single bit of information. The formula is:
 
-$$E = k_B T \ln 2$$
+$E = k_B T \ln 2$
 
 Where $k_B$ is the Boltzmann constant and $T$ is the absolute temperature of the circuit. While our current GPUs are nowhere near this theoretical floor, the sheer scale of modern training runs means we are hitting a "Physical Wall." We are no longer limited by how clever our code is; we are limited by how much heat we can dissipate and how much "ordered energy" we can pump into a system. Intelligence has a metabolism.
 
