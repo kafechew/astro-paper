@@ -12,10 +12,9 @@ tags:
   - popebot
   - fix
   - english
-description: Why permission denied when you were trying to build PopeBot and how to fix it.
+description: Build error after upgrade to PopeBot v1.2.73-beta.35 on a Raspberry Pi. Solved by expand vRAM, remove Symlink loops and upgrade Node version.
 ---
 
-# V8_Fatal when Upgrade to PopeBot v1.2.73-beta.35
 
 So, you decided to run a modern, heavy-hitting AI bot framework like **ThePopeBot** (v1.2.73-beta.35) on a Raspberry Pi. You hit "Upgrade," and suddenly your terminal is screaming about `Fatal error in NewArrayList` and `SIGTRAP`.
 
