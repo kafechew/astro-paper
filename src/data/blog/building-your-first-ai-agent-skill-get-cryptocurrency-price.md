@@ -87,7 +87,7 @@ kafechew@raspberrypi:~/keaibot $ npx thepopebot set-agent-llm-secret COINGECKO_A
 
 Instead of writing the boilerplate ourselves, we are going to act as the orchestrator and let the AI agent build its own skill. I prompted my agent with the following:
 
-> *"Can you help me get the latest Bitcoin price? I have a CoinGecko API. PS: I successfully set the secret: `AGENT_LLM_COINGECKO_API_KEY`."*
+> *Can you help me get the latest Bitcoin price? I have a CoinGecko API. PS: I successfully set the secret: `AGENT_LLM_COINGECKO_API_KEY`.*
 
 Because the framework is modular, the agent understood exactly what to do and proposed a job description to create two files:
 
@@ -162,7 +162,10 @@ Now that the skill is merged and active, we can test it by giving the agent a hi
 
 **The Prompt:**
 
-> *"Create a new file named `crypto_price.txt` in the `/logs` directory. Check the latest bitcoin price and then append it into `logs/crypto_price.txt`"*
+```
+Create a new file named `crypto_price.txt` in the `/logs` directory. 
+Check the latest bitcoin price and then append it into `logs/crypto_price.txt`
+```
 
 Because the agent now has the `coingecko-price` skill in its repository, it knows exactly which script to execute, reads the environment variable automatically, fetches the data, and logs it perfectly.
 

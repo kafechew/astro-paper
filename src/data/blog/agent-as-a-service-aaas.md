@@ -66,6 +66,7 @@ This is the autonomous orchestration layer — the "brain" that knows *when* to 
 
 To understand AaaS, we must distinguish between a tool and a sovereign entity. An **Agent** is a sovereign actor that operates on a **"Why"** (Mission) rather than just a "How" (Task).
 
+Read: [The Tool (The “What”) vs The Skill (The “How”)](https://www.kheai.com/posts/building-your-first-ai-agent-skill-get-cryptocurrency-price#the-tool-the-what)
 
 
 ## The Four Pillars of a Sovereign Agent
