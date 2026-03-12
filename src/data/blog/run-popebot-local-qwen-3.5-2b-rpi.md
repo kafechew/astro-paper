@@ -11,6 +11,7 @@ tags:
   - rpi
   - popebot
   - deeptech
+  - slm
   - english
 description: Here is exactly how I squeezed every drop of performance out of the Pi 4's Cortex-A72 architecture to run the Qwen3.5 2B model as the "brain" for my local agent.
 ---

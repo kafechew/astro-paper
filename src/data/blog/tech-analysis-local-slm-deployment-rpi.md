@@ -11,6 +11,8 @@ tags:
   - rpi
   - popebot
   - deeptech
+  - slm
+  - llm
   - english
 description: This research report investigates the optimal configuration of models, inference engines, and system-level parameters required to transform a quad-core ARMv8 platform into a reliable, 24/7 autonomous AI Agent.
 ---
