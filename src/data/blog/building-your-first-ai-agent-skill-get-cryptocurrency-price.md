@@ -177,3 +177,5 @@ Check the latest bitcoin price and then append it into `logs/crypto_price.txt`
 Because the agent now has the `coingecko-price` skill in its repository, it knows exactly which script to execute, reads the environment variable automatically, fetches the data, and logs it perfectly.
 
 You’ve successfully moved from manually clicking an API link to commanding an autonomous system. You are no longer the engine; you are the conductor.
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/pcnB78scUtI?si=iqM5-kmXQjivpktG" title="Get Latest Crypto Price and keep in a TXT file" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
