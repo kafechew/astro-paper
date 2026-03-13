@@ -116,9 +116,9 @@ curl http://localhost:8080/v1/chat/completions \
     "model": "qwen3.5-0.8b",
     "messages": [
       {"role": "system", "content": "Logic mode. Concise. 'RECOURSE' if unsure."},
-      {"role": "user", "content": "Halo"}
+      {"role": "user", "content": "Where is China?"}
     ],
-    "temperature": 0.1
+    "temperature": 0.0
   }'
 ```
 
