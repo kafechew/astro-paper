@@ -39,6 +39,10 @@ Look at what happened when I asked a 0.8B model about my home, **Malaysia**:
 
 To get usable speed on a Raspberry Pi 4B (8GB), you can't run default settings. You must optimize for the **Cortex-A72 CPU** and its specific memory bandwidth limitations.
 
+```bash
+cd llama.cpp
+```
+
 Here is the "Rational Bash" command I use for my **PopeBot** core. This setup prioritizes execution speed over "creative" fluff.
 
 ```bash
@@ -70,7 +74,6 @@ Run this command to create your local endpoint:
   --reasoning-budget 0 \
   --repeat-penalty 1.2 \
   --mlock \
-  -sys "Logic mode. Concise. 'RECOURSE' if unsure." \
   --api-key "local-pi-key" \
   --host 0.0.0.0
 ````
@@ -102,6 +105,22 @@ These flags strip away the "fluff" and force the AI to act strictly as a determi
 - **`--port 8080`**: Opens the API on port 8080.
 - **`--host 0.0.0.0`**: Binds the server to all network interfaces. Instead of just talking to itself (`localhost`), the Pi will now accept API requests from any other device on your local Wi-Fi network (e.g., your laptop connecting to the Pi's IP address).
 - **`--api-key "local-pi-key"`**: Adds a mandatory password. Any script or service trying to use this API must include this Bearer token in the header.
+
+### Test
+
+```bash
+curl http://localhost:8080/v1/chat/completions \
+  -H "Content-Type: application/json" \
+  -H "Authorization: Bearer local-pi-key" \
+  -d '{
+    "model": "qwen3.5-0.8b",
+    "messages": [
+      {"role": "system", "content": "Logic mode. Concise. 'RECOURSE' if unsure."},
+      {"role": "user", "content": "Halo"}
+    ],
+    "temperature": 0.1
+  }'
+```
 
 
 ## 3. The Strategy: The "Router" Architecture
