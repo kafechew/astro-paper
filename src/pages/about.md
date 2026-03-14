@@ -1,98 +1,119 @@
 ---
 layout: ../layouts/AboutLayout.astro
 title: "About kheAI"
-description: "Trusted autonomous agents. Audits, safe pilots, and production rollouts for teams that need auditable, self-hosted automation."
+description: "Zap-driven AI intelligence for Web3 builders. Verified economic intent, lead delivery, and auditable developer reputation."
 ---
 
-## kheAI now builds trusted autonomous agents — safely
+## The Economic Attention Graph for Builders
 
-kheAI provides AI Agentic consulting and deployment services for teams that want the power of autonomous agents — without taking catastrophic security, supply-chain, or compliance risk.
+kheAI turns verifiable micropayments on the open social layer into **actionable, auditable B2B intelligence**.
 
-We specialize in turning open-source agent frameworks into production-grade automation: fast audits, safe pilots, production rollouts, and ongoing managed ops. Our core promise is simple:
+Built on the permissionless stream of Nostr and the settlement guarantees of the Lightning Network that move sats, kheAI detects real commercial intent (not vanity engagement), scores it, and delivers high-confidence lead reports and reputation signals to product teams, VCs, and developer platform operators.
 
-> Ship autonomous agents that are auditable, reversible, and safe — not just clever.
 
-We build on proven patterns: treat a Git repository as the agent’s source of truth, run tasks inside isolated runners, and ensure secrets never leak into an LLM prompt at rest. For example, the open-source agent framework PopeBot provides the Git-centric audit model we standardize around, and we use industry best practices on top of it to deliver enterprise reliability.
+## Mission
 
----
+Ship intelligence that maps *economic attention* — not impressions — to real-world commercial outcomes. We help decision-makers discover who is funding, hiring, or buying in the builder economy **before** public hype, and we do it with cryptographic receipts and auditable reasoning.
 
-## What we sell (high-velocity, directly actionable)
+## What we do 
 
-1. Quick Audit & Hardening (1 week) — repo & CI review, token scope inventory, urgent fixes, one-page remediation plan.
-2. Safe PopeBot Pilot (2 weeks) — single PoC agent with human-in-loop gating, telemetry dashboard, and one revenue experiment.
-3. Production Rollout (4–12 weeks) — multi-repo governance, canary pipelines, secrets broker, SLOs, and runbooks.
-4. Ongoing Managed Service (monthly) — patching, key rotation, safety audits, incident on-call, analytics, and prompt/skill tuning.
-5. Custom Engineering — vetted skill libraries, low-latency worker lanes, or integrations (messaging, payments, relays).
+### Lead Alerts — pay-per-lead delivery
 
-Prices are intentionally straightforward and modular so teams can start small and expand as ROI appears.
+We surface vetted, evidence-backed lead packets that include:
 
----
+* verified zap receipts (cryptographic proof),
+* mapped identity metadata,
+* contextual notes and hypothesis,
+* a structured outreach playbook,
+* a confidence score produced by a multi-persona AI debate.
 
-## Why customers hire us (decision-maker value)
+Deliverables: encrypted Nostr DM, webhook to your CRM, or direct Lightning/eCash settlement per report.
 
-- CTOs: reduce supply-chain & secrets risk, get auditable change history in their existing Git workflows (we integrate with your CI and audit trail).
-- Product leads: launch agents with measurable outcomes and a tested canary→promote process.
-- Investors / Legal: show governance, lower operational risk, and shorten time-to-revenue.
 
----
+### Economic Attention Graph — API & export
 
-## Our operational baseline (what every engagement delivers)
+A multi-dimensional, payment-weighted knowledge graph (pubkeys, pays, topics, temporal edges) that answers high-value queries like:
 
-- GitHub org & repo hygiene and least-privilege token policy.
-- CI policy with static analysis and mandatory human review gates.
-- Canary release flow: canary repo → limited run → telemetry → promote/revert.
-- Secrets broker integration (short-lived credentials).
-- Network egress allowlists, sandbox containers, and automated rollback scripts.
-- Incident response playbook and postmortem template.
+* Who is funding which developer or project?
+* Which topics are attracting real capital right now?
+* Which developers have sustained, repeat payers?
 
-These are non-negotiable controls we deploy on day one so your agents can earn trust from their first action.
+Access: subscription API with streaming webhooks and graph exports.
 
----
+### Developer Proof-of-Value — reputation as a metric
 
-## Typical engagement flow (repeatable, 7 steps)
+A continuous reputation index derived from sat volume, payer diversity, retention rate, and the technical context of payments. Designed for recruiting teams, grant committees, and protocol stewards.
 
-1. Pre-sale call — goals, risk tolerance, access required.
-2. Proposal + SOW — fixed deliverables, timeline, payment, testimonial clause.
-3. Kickoff — snapshot repo, inventory secrets, add read-only audit access.
-4. Audit sprint (3–5 days) — findings + urgent fixes.
-5. Pilot deploy (2 weeks) — human-in-loop, heartbeat checks, telemetry.
-6. Handover — runbook, canary policy, acceptance tests.
-7. Optional monthly ops contract.
+### Market Radar — public, viral feed
 
----
+A free daily digest (Nostr bot + public page) that surfaces top economic narratives and emergent developer winners — our primary top-of-funnel magnet.
 
-## Common risks — how we mitigate them 
 
-- Unauthorized actions: human-in-loop gating + cryptographic identity policies.
-- Malicious skills / supply-chain: curated skill library, code signing, mandatory reviews.
-- Secrets exfiltration: ephemeral credentials + secrets broker + SIEM alerts + egress allowlists.
 
-We document each mitigation in the SOW and measure them via KPIs (MTTR, incidents prevented, pilot conversion rate).
+## Why kheAI is different
 
----
+Most social tools measure intent with zero-cost actions (likes, follows). Legacy players like Hootsuite, Sprout Social, and Brandwatch rely on these noisy signals. Blockchain analytics providers (e.g., Nansen, Arkham) measure value flows but lack social context.
+
+kheAI uniquely combines:
+
+1. **Cryptographic receipts** (economic proof) from Nostr + Lightning,
+2. **Contextual social signal** (note text, mentions, topics),
+3. **Proprietary identity mapping** that ties pubkeys to real-world projects, and
+4. **An AI swarm** that debates and stresses each lead (quantitative, contextual, skeptic personas) before delivering a report.
+
+We also sit at a different product layer than consumer Nostr clients like Primal or Damus and analytics toys like Zap Tracker or Zapstore.dev — kheAI is *enterprise intelligence* for the builder economy.
+
+
+## How it works
+
+1. **Ingestion & provenance**
+   Curated relay orchestrator collects notes and zap receipts; receipts are parsed and cryptographically verified. Raw events and context are stored in a replayable, encrypted vault.
+2. **Identity mapping**
+   Heuristic crosswalks (NIP-05/NIP-39 style mapping), DNS-anchored identifiers, and manual verification build the Identity Graph used to map pubkeys to teams, projects, and companies.
+3. **AI swarm reasoning**
+   When a high-value economic event triggers, three specialized personas debate the signal:
+   * Quantitative Analyst: volume, velocity, payer history.
+   * Semantic Profiler: topic modeling and intent classification.
+   * Skeptic: attempts adversarial invalidation (tip circles, pump tactics).
+     Consensus → structured lead packet → deliver.
+4. **Delivery & monetization**
+   Pay-per-lead via Lightning/eCash, encrypted DM delivery (NIP-style gift wraps), and enterprise webhook/API streaming.
+
+
+## Security, privacy, and compliance
+
+* **Public-event only by default.** We process public Nostr events and receipts; private content is only processed with explicit client consent.
+* **Minimum PII retention.** Identity mappings are confidence-banded; clients receive cryptographic receipts to independently verify claims.
+* **Operational controls.** Replayable pipelines, deterministic audits of the AI debate, and encrypted backups keep the system auditable for compliance and due diligence.
+* **Payments compliance.** For large enterprise engagements we default to traditional invoicing; micro-payments use off-KYC Lightning/eCash rails where permitted.
+
+
+## Typical engagements & pricing (start small)
+
+* **Pilot Audit + 10 sample leads** — fast validation for VCs and infra vendors.
+* **Pay-Per-Lead** — $5–$20 per vetted lead (micro-payable via Lightning).
+* **API / Enterprise** — subscription access to Graph + alert streams (starting $499/mo).
+* **Custom research / integrations** — tailored SOWs for strategic intelligence and systems integration.
+
 
 ## Who this is for
 
-- Crypto builders & DAOs that need non-custodial automation.
-- Fintech startups that must show auditable actions and fast MTTR.
-- Privacy-first companies that prefer edge/self-hosted agents.
-- Agencies and platform partners that want a white-label, secure agent offering.
+* VC & angel investors who want early, verifiable deal signals.
+* Developer tooling and infrastructure vendors seeking high-intent inbound leads.
+* Lightning and Bitcoin service providers scouting partners and hires.
+* Research teams and enterprise groups that need auditable, pay-backed social signals.
 
-If you care about automation that is accountable — not opaque — you’re our customer.
+If you care about reproducible intelligence that traces directly to money that settled, kheAI is purpose-built for you.
 
----
+
+## About the team & lineage
+
+kheAI is built by engineers who moved from sovereign, edge-first AI to productized intelligence for builders. We operationalize open, auditable patterns (Git-first audit models, canary pipelines, and secrets brokers) and owe intellectual debt to the Git-centric agent approaches in the community and the open agentic frameworks that inspired our audit model.
+
 
 ## Quick call to action
 
-If you want a fast, no-nonsense audit or a discounted pilot to demonstrate value, book a 20-minute pre-sale call. We’ll scope a 1-week audit that surfaces the highest-risk items and gives you a clear remediation plan.
+Want to validate this with a live sample? Book a 20-minute pre-sale call and we’ll scope a 1-week audit + 10-lead pilot tailored to your niche. Prefer to share a repo snapshot or architecture diagram first? Send it and we’ll return a short "safe start" checklist.
 
-Prefer to start by sharing a repo snapshot or an architecture diagram? Send it — we’ll review and return a "safe start" checklist.
-
----
-
-## About the founder
-
-kheAI was built by a small team that moved from building sovereign, edge-first AI to helping others operationalize agentic automation. We also acknowledge the originators of the underlying agent model, including the community around Stephen G. Pope, whose Git-centric approach inspired many of the audit patterns we use.
-
-Truth in automation is a technical problem — not a marketing one. If reliability, auditability, and sane SLAs matter to you, let's build the safety layer together.
+Contact: `hi@kheai.com` — or send a secure DM and request a sample lead for your focus area.
 
