@@ -2,7 +2,7 @@ export const SITE = {
   website: "https://kheai.com/", 
   author: "Kai",
   profile: "https://www.linkedin.com/in/kheai",
-  desc: "kheAI converts cryptographically verifiable zaps on the protocol into high-confidence, auditable B2B leads and developer reputation signals.",
+  desc: "kheAI converts cryptographically verifiable zaps on the Nostr protocol into high-confidence, auditable B2B leads and developer reputation signals.",
   title: "kheAI Commerce",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
