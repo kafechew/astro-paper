@@ -2,7 +2,7 @@
 author: Kai
 pubDatetime: 2026-03-02T13:00:00+08:00
 title: kheAI Ideation - the Autonomous Agency
-featured: true
+featured: false
 draft: false
 slug: kheai-ideation-autonomous-agency
 tags:

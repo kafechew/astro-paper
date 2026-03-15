@@ -1,6 +1,6 @@
 ---
 author: Kai
-pubDatetime: 2026-03-24T09:00:00+08:00
+pubDatetime: 2026-03-25T09:00:00+08:00
 title: How I Built a Nostr AI Agent in Under 100 Lines of Code
 featured: false
 draft: false
