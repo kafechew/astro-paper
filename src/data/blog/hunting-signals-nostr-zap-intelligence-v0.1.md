@@ -2,7 +2,7 @@
 author: Kai
 pubDatetime: 2026-03-23T09:00:00+08:00
 title: Hunting Signals - Nostr Zap Intelligence v0.1
-featured: true
+featured: false
 draft: false
 slug: hunting-signals-nostr-zap-intelligence-v0.1
 tags:
