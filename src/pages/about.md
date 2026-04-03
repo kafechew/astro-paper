@@ -29,12 +29,12 @@ We transpile your operational complexity into a silent, high-uptime engine. You 
 
 KheAi is built by engineers who moved from sovereign, edge-first AI to productized intelligence for builders. We operationalize open, auditable patterns (Git-first audit models, canary pipelines, and secrets brokers) and owe intellectual debt to the Git-centric agent approaches in the community and the open agentic frameworks that inspired our audit model.
 
-| Element | Specification | System Logic |
-|---|---|---|
-| **Title** | **KheAi Architect** | High-authority signal; implies design-level control. |
-| **2-Word Label** | **Systemic Realism** | The core filter; reality-based logic over social "Path" noise. |
-| **Tagline** | **Root Access to Efficiency.** | The ultimate promise of deep-system authorization. |
-| **Mission** | **Transpiling complexity into automated logic.** | The functional output: turning chaos into code. |
+| Specification | System Logic |
+|---|---|
+| **KheAi Architect** | High-authority signal; implies design-level control. |
+| **Systemic Realism** | The core filter; reality-based logic over social "Path" noise. |
+| **Root Access to Efficiency.** | The ultimate promise of deep-system authorization. |
+| **Transpiling complexity into automated logic.** | The functional output: turning chaos into code. |
 
 
 ## Quick call to action
