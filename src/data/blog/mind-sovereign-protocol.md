@@ -2,7 +2,7 @@
 author: Kai
 pubDatetime: 2026-01-28T20:00:00+08:00
 title: The Mind Sovereign Protocol
-featured: true
+featured: false
 draft: false
 slug: mind-sovereign-protocol
 tags:
