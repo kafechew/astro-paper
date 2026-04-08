@@ -2,7 +2,7 @@
 author: Kai
 pubDatetime: 2026-03-29T09:00:00+08:00
 title: OpenClaw for Newbie - Capabilities, Misconceptions & Real-World Costs
-featured: true
+featured: false
 draft: false
 slug: openclaw-for-newbie-capabilities-misconceptions-costs
 tags:

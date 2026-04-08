@@ -2,7 +2,7 @@
 author: Kai
 pubDatetime: 2026-04-02T09:00:00+08:00
 title: Building a Local AI Employee with OpenClaw, Gemma 4 & LLM Wiki in RPi
-featured: false
+featured: true
 draft: false
 slug: local-ai-employee-openclaw-gemma-4-llm-wiki-rpi
 tags:
@@ -12,6 +12,7 @@ tags:
   - slm
   - rpi
   - rag
+  - memory
   - productivity
   - deeptech
   - english

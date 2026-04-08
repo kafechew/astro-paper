@@ -2,7 +2,7 @@
 author: Kai
 pubDatetime: 2026-04-01T09:00:00+08:00
 title: The OpenClaw Illusion - A First-Principles Audit and Startup Blueprint
-featured: true
+featured: false
 draft: false
 slug: openclaw-illusion-first-principles-audit-startup-blueprint
 tags:
