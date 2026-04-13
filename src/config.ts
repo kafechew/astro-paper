@@ -2,7 +2,7 @@ export const SITE = {
   website: "https://kheai.com/", 
   author: "Kai",
   profile: "https://www.linkedin.com/in/kheai",
-  desc: "Deploying Systemic Realism to eliminate operational friction. Secure Root Access to efficiency through automated business logic and high-throughput architecture.",
+  desc: "KheAI creates a permanent, self-correcting memory that agents use to execute tasks autonomously, by compiling files into a structured LLM Wiki, and monetization.",
   title: "KheAi Architect",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
