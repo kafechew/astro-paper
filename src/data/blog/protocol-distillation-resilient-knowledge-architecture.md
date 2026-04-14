@@ -2,7 +2,7 @@
 author: Kai
 pubDatetime: 2026-03-30T09:00:00+08:00
 title: The Distillation Protocol for The Resilient Knowledge Architecture
-featured: true
+featured: false
 draft: false
 slug: protocol-distillation-resilient-knowledge-architecture
 tags:

@@ -11,7 +11,7 @@ tags:
   - productivity
   - mind
   - english
-description: Are you truly an autonomous individual, or are you merely a biological puppet executing the scripts of your evolutionary programming, environmental sensory inputs, emotional impulses, and societal algorithms? The objective of this protocol is to transition you from a reactionary node into a "Root Administrator" capable of designing your own behavioral and financial architecture. 
+description: Are you truly an autonomous individual, or are you merely a biological puppet executing the scripts of your evolutionary programming, environmental sensory inputs, emotional impulses, and societal algorithms?  
 ---
 
 For years, I thought my burnout, anxiety, and perpetual lack of time were personal failures. I believed I just needed to hustle harder, optimize my calendar, or find the right productivity app. I was dead wrong.
