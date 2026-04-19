@@ -76,9 +76,6 @@ You are a Principal Full-Stack Engineer and IoT Systems Architect. We are buildi
 Give me production-ready, highly commented code. Prioritize the `services/` directory and Dashboard UI.
 ```
 
-*(Pro-Tip for AI Studio: It cannot process `"use server";` directives during generation. Just comment them out in your prompt, and add them back when you move to your local deployment).*
-
-
 
 ## 🔒 Phase 1: Auth0 for Agents (M2M Zero-Trust Network)
 

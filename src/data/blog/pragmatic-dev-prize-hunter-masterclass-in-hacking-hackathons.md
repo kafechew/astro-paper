@@ -169,7 +169,7 @@ This strictly pulls down the JavaScript code but skips running pre-install or po
 
 ## Phase 5: Deployment Strategies
 
-A hackathon project isn't real until it's live on the internet. Never wait until the final hour of the hackathon to deploy. Localhost works until it doesn't. Because we built a Next.js application, it is highly portable. Since we are targeting the "Best Google AI/Cloud Usage" category, deploying to **Google Cloud Run** is our gold standard.
+A hackathon project isn't real until it's live on the internet. Never wait until the final hour of the hackathon to deploy. Localhost works until it doesn't. Because we built a Next.js application, it is highly portable. Deploying to **Google Cloud Run** is our gold standard.
 
 ### Step 1: Prepare your Next.js App for Docker
 
