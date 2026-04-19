@@ -313,6 +313,7 @@ Use this exact hierarchy to make grading easy for the judges:
 - **Code:** Embed the GitHub repository. 
 - **System Architecture (How I Built It):** Insert your diagram here. Explain the technical decisions and the *why* behind your stack.
 - **Prize Categories:** Create distinct `###` headers for *every single category* you are targeting. Explicitly write a brief paragraph under each explaining exactly how you integrated their technology. Force the judges to check the box next to your name.
+- **DevTo Blogs Series:** If you need to explain more or a followup post, but not in this main post. Before publishing the post, click "Advanced Options", select your existing series or create a new series. You can create a series on DEV with only one post, but the series navigation (the Table of Contents) will not appear until there are at least two published posts in the series.
 
 
 
