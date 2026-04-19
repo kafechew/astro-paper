@@ -1,7 +1,7 @@
 ---
 author: Kai
 pubDatetime: 2026-04-07T09:00:00+08:00
-title: Mastering the Gemini API (2026 Edition)
+title: Mastering the Gemini API & Embeddings (2026 Edition)
 featured: false
 draft: false
 slug: mastering-gemini-api-2026
@@ -36,6 +36,13 @@ Here is a breakdown of what separates them:
 | **Access**            | Good access, but throttled on stable models   | Full, unthrottled access to all models               |
 | **Advanced Features** | Basic prompting                               | Context caching, batching, high-res media processing |
 
+
+### The Engine: Google AI Studio
+
+Your AI needs a massive context window so it doesn't "forget" your code as your project grows.
+
+- Go to **Google AI Studio** and generate a free Gemini API Key.
+- We will rely on `gemini-3.1-flash-lite-preview` for its generous rate limits and speed, and `gemini-3.1-pro-preview` for complex logic. 
 
 
 ### Why Did My Tier Change Suddenly?

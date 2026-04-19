@@ -22,7 +22,7 @@ But if you approach it strategically, it is one of the most explosive ways to le
 
 I’ve learned that winning a developer challenge—whether on DEV.to or any major hackathon platform— isn’t about having ten years of senior engineering experience. You cannot just throw a wrapper over an API, cross your fingers, and hope the judges see your genius. Winning is engineered. It requires reverse-engineering the judging criteria, mitigating local hardware friction, and architecting a solution that is technically sound and visually undeniable. It’s about how effectively you can orchestrate AI to do the heavy lifting, how creatively you use sponsor APIs, and how well you tell your story.
 
-If you are a total newbie wanting to go from zero to hero, here is my evergreen, step-by-step blueprint for taking any hackathon idea from absolute zero to a deployed, prize-winning reality, using a completely free, AI-powered toolkit. A specific case study? You can refer [**Dev.to April Fools Hackathon**](http://localhost:4321/posts/from-zero-to-prize-hunter-winning-dev-to-challenges-free-ai-stack) and [EarthDay Weekend Hackathon](/posts/dev-gheiagrid-auth0-snowflake-solana-devto-earth-day-challenge).
+If you are a total newbie wanting to go from zero to hero, here is my evergreen, step-by-step blueprint for taking any hackathon idea from absolute zero to a deployed, prize-winning reality, using a completely free, AI-powered toolkit. A specific case study? You can refer [Dev.to April Fools Hackathon](http://localhost:4321/posts/from-zero-to-prize-hunter-winning-dev-to-challenges-free-ai-stack) and [EarthDay Weekend Hackathon](/posts/dev-gheiagrid-auth0-snowflake-solana-devto-earth-day-challenge).
 
 ![The Pragmatic Prize Hunter: A Masterclass in Hacking Hackathons](https://ik.imagekit.io/moopt/kheai/ai/prag-prize-hunter_Z3azS8Lzb.png)
 
@@ -41,7 +41,7 @@ Before we touch the code, you need to understand the "meta" of Dev.to challenges
 Before you ideate, you need a friction-free environment. I don't pay for bloat; I rely on highly optimized, predominantly free tools to move fast. Building a modular stack allows you to swap components based on the specific challenge sponsors.
 
 - **The Brains (LLMs & SLMs):** Use [**Google Gemini**](/posts/mastering-gemini-api-2026) or ChatGPT for deep context reasoning, architecture planning, and multimodal tasks. If you need local execution without relying on cloud APIs, run [Small Language Models (SLMs)](/posts/run-popebot-local-qwen-3.5-2b-rpi) like **Gemma** via a `llama.cpp` server optimized with TurboQuant in [Raspberry Pi](/posts/raspberry-pi-4b-to-host-ai-agent-guide). For Cloud APIs, most probably we will rely on `gemini-3.1-flash-lite-preview` for its generous rate limits and speed.
-- **The Vibe Coders:** For rapid zero-to-one scaffolding, use web-based builders like **Google AI Studio**. For granular, line-by-line execution inside your IDE, lean on **GitHub Copilot**. Alternatively, you can use the free tiers of web AI apps (Gemini, ChatGPT, Claude) to map out your logic.
+- **The Vibe Coders:** For rapid zero-to-one scaffolding, use web-based builders like **Google AI Studio**. For granular, line-by-line execution inside your IDE, lean on [**GitHub Copilot**](/posts/github-copilot-free-guide-2026). Alternatively, you can use the free tiers of web AI apps (Gemini, ChatGPT, Claude) to map out your logic.
 - **The Data Layer:** Rely on [**MongoDB Atlas**](/posts/mongodb-atlas-setup-guide-free-tier) (specifically utilizing Vector Search for AI-driven semantic retrieval) and traditional SQL/NoSQL databases as dictated by the prompt, as well as an [**LLM Wiki**](/posts/local-ai-employee-openclaw-gemma-4-llm-wiki-rpi) for knowledge grounding. 
 - **The Deployment Pipeline:** **GitHub** for version control, connected to **Google Cloud Run** (for containerized full-stack apps) or **Vercel** (for frontend-heavy frameworks) for seamless CI/CD.
 
@@ -131,7 +131,7 @@ const ai = new GoogleGenAI({ apiKey });
 - Start the development server: `npm run dev`
 - Navigate to http://localhost:3000 in your browser
 - Use Github Desktop to create a new repo via `existing repo`
-- Use free [Github CoPilot](/posts/github-copilot-free-guide-2026) (via VS Code) for update code locally
+- Use free Github CoPilot (via VS Code) for update code locally
 
 
 
