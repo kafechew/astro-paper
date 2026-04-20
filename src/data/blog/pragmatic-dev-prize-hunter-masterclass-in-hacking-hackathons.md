@@ -348,7 +348,8 @@ Live Demo: https://gheia-750841821481.us-central1.run.app/
 {% embed https://github.com/kheai/gheia %}
 
 ## How I Built It
-<!-- Walk us through your technical approach and any interesting decisions you made along the way. If you used any of the prize category technologies, be sure to highlight how you incorporated them here! -->
+<!-- Walk us through your technical approach and any interesting decisions you made along the way. Images / Screenshots, always linked back to ImageKit for bigger resolution [![GheiaGrid](https://ik.imagekit.io/moopt/kheai/ai/260418-gheia-earth-day_CCF4PdlrS.png)] -->
+
 
 ## Prize Categories
 <!-- Note which ones apply and why (Best Use of Auth0 for Agents, Best Use of Google Gemini, Best Use of Snowflake, Best Use of GitHub Copilot, Best Use of Solana). -->
