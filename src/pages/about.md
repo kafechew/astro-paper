@@ -1,28 +1,65 @@
 ---
 layout: ../layouts/AboutLayout.astro
 title: "About KheAi"
-description: "Autonomous Knowledge Management, Execution & Monetization. KheAi creates a permanent, self-correcting memory that agents use to execute tasks autonomously, by compiling files into a structured LLM Wiki, and monetization"
+description: "Temporal Entity-Relation (ER) Graphs Intelligence for the Malaysian Corporate Ecosystem."
 ---
 
-## Smart Edge AI
+## Untangling the Web of Corporate Complexity
 
-Most organizations are attempting to solve non-linear problems with amnesiac, stateless AI. They are bogged down by fragmented vector databases, hallucinated context, and chat windows that forget everything the moment they close. It is a high-entropy cycle of endless prompting with zero compounding value.
+In the modern Malaysian corporate landscape, ownership isn't a straight line—it is a web. Between nominee accounts, state-backed investment vehicles, and multi-tiered joint ventures, the "true" picture of corporate control is often buried under thousands of pages of unstructured filings. 
 
-At **KheAi**, we don't contend with the theater of "chatbots." We apply **Systemic Realism** to build the future of autonomous execution. We don't just give you an AI; we give it a permanent memory.
+**KheAi was born to bring clarity to this complexity.** We are a B2B MicroSaaS providing **Temporal Graph Intelligence** to automate corporate compliance and supply chain mapping for the Malaysian ecosystem. Unlike legacy reporting tools that provide a static snapshot of today, KheAi tracks the evolution of ownership, influence, and risk over time.
 
-## **The Architecture of Inevitability**
+---
 
-We do not provide generic API wrappers. We provide **Root Access to your own Cognitive Operating System**.
+## Why We Exist: The 2026 Regulatory Shift
 
-Our methodology is built on the mathematical certainty that if you give an AI a persistent, self-correcting memory, autonomous execution becomes the path of least resistance. We don't ask your team to "prompt better"; we redesign your operational physics so that every interaction compiles into a structured **Data Flywheel**.
+Malaysian companies are currently hitting a "Compliance Debt" wall. New, non-negotiable mandates have transformed corporate governance from a "check-the-box" exercise into a high-stakes race for transparency:
 
-- **Logic Over Amnesia:** We replace fragmented, stateless retrieval with the **LLM Wiki**. Unstructured chaos is autonomously compiled into human-readable, highly structured `.qmd` markdown files.
-- **Epistemic Sovereignty:** No black boxes. Every piece of ingested knowledge is audited against a strict Constitution of Truth (Verified, Hypothesis, Contradicted). You know exactly what your AI knows, and exactly where it learned it.
-- **Human-in-the-Loop Execution:** We bridge the gap between knowing and doing. KheAi doesn't just summarize code or workflows; it queues local shell commands and system updates, held safely in a real-time Action Center until you click "Confirm."
+* **SSM e-BOS (Section 60C):** Strict enforcement of Ultimate Beneficial Ownership (UBO) reporting, carrying RM50,000 fines and criminal liability for inaccuracies.
+* **Bursa Malaysia NSRF Scope 3:** Mandatory climate-first supply-chain mapping for Main Market issuers.
 
-We transpile your operational complexity into a silent, high-uptime engine powered by a hyper-reactive Meteor-Blaze monolith. You don't need to repeat yourself; you need a more robust architecture.
+Traditional tools rely on flat, relational tables that treat data as a snapshot. This makes tracing through "Nominee" accounts a manual, multi-week process prone to human error. 
 
-**Build the machine. Stop Chatting. Start Remembering.**
+---
+
+## Our Innovation: Bitemporal Modeling
+
+The "KheAi Moat" is our unique approach to time. We distinguish between:
+1.  **Valid Time:** When a real-world change actually occurred.
+2.  **Transaction Time:** When that change was officially filed with regulators.
+
+By mapping these two timelines, KheAi automatically detects **"Ownership Drift"** and compliance filing gaps that traditional credit bureaus fundamentally cannot see. We don't just show you who owns a company today; we show you how that control was accumulated.
+
+---
+
+## The Intelligence Suite
+
+Our platform replaces manual tracing with an automated, dynamic graph powered by **GraphRAG** and **Gemini 3.1 Flash**:
+
+* **The Flashback Auditor:** A temporal slider that allows users to "time-travel" the corporate graph to see control structures at any point in history.
+* **The UBO Unmasker:** An automated workflow that collapses "Nominee" shells to reveal the "Natural Person" controllers, generating SSM-ready PDF reports in seconds.
+* **The Scope 3 ESG Mapper:** A visualization engine for Tier 1 and Tier 2 supply chain networks to identify high-risk nodes and historical ESG violations.
+* **Agentic Corporate Memory:** A chat interface where every entity node becomes a "Persona." Users can ask natural language questions about influence and board changes, receiving accurate, cited answers derived directly from the graph.
+
+---
+
+## Built for Malaysian Sovereignty
+
+Data privacy and residency are at the core of our architecture. 
+* **Local Infrastructure:** KheAi is hosted on Local Malaysian Cloud Regions (AWS/Azure MY) to ensure 100% adherence to PDPA and corporate privacy standards.
+* **Immutable Truth:** All raw filings and PDFs are stored in an unedited, read-only audit trail in Google Cloud Storage.
+* **Sovereign AI:** We use a high-margin, lean architecture that ensures Malaysian corporate data remains within domestic digital fences.
+
+---
+
+## Our Vision: Beyond Compliance
+
+Compliance is merely our wedge into the market. Our long-term mission is to build the **Agentic Corporate Memory** for Southeast Asia. 
+
+As we continue to ingest data and map logical dependencies, we are building a persistent "memory" for AI that improves enterprise query accuracy from 40% to over 90%. We are transforming corporate intelligence from a retroactive chore into a proactive, predictive asset for the future of the Malaysian economy.
+
+---
 
 ## About the team & lineage
 
@@ -41,4 +78,3 @@ Want to validate this architecture locally?
 
 Contact: `hi@kheai.com` — or send a secure DM to request early repository access.
 
-We’ll provide the core Meteor monolith, the `.meteorignore` storage shield, and the `SCHEMA.md` constitution so you can spin up your own Stateful Intelligence. Prefer to share your current AI infrastructure or RAG pipeline first? Send it over, and we’ll return a systemic "safe start" upgrade checklist.
